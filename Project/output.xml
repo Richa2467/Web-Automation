@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.10 on linux)" generated="20240219 17:15:49.705" rpa="false">
+<suite id="s1" name="Addtoken" source="/home/richatyagi/PycharmProjects/pythonProject/Project/Addtoken.robot">
+<test id="s1-t1" name="AddToken">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20240219 17:15:49.814" level="INFO">Opening browser 'Chrome' to base url 'https://formstone.it/components/dropdown/demo/'.</msg>
+<status status="PASS" starttime="20240219 17:15:49.814" endtime="20240219 17:15:54.328"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240219 17:15:54.329" endtime="20240219 17:15:54.435"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${selectUserFilter}</arg>
+<arg>timeout=30s</arg>
+</arguments>
+<status status="PASS" starttime="20240219 17:15:54.435" endtime="20240219 17:15:54.451"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${selectUserFilter}</arg>
+</arguments>
+<msg timestamp="20240219 17:15:54.452" level="INFO">Clicking element '//button[@id="demo_basic-dropdown-selected"]'.</msg>
+<status status="PASS" starttime="20240219 17:15:54.451" endtime="20240219 17:15:54.515"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//ul[@id="demo_basic-dropdown-selected"]//li[@data-value='2']</arg>
+</arguments>
+<msg timestamp="20240219 17:15:54.515" level="INFO">Clicking element '//ul[@id="demo_basic-dropdown-selected"]//li[@data-value='2']'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240219 17:15:54.659" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240219 17:15:54.535" endtime="20240219 17:15:54.659"></status>
+</kw>
+<msg timestamp="20240219 17:15:54.660" level="FAIL">Element with locator '//ul[@id="demo_basic-dropdown-selected"]//li[@data-value='2']' not found.</msg>
+<status status="FAIL" starttime="20240219 17:15:54.515" endtime="20240219 17:15:54.660"></status>
+</kw>
+<status status="FAIL" starttime="20240219 17:15:49.813" endtime="20240219 17:15:54.660" critical="yes">Element with locator '//ul[@id="demo_basic-dropdown-selected"]//li[@data-value='2']' not found.</status>
+</test>
+<status status="FAIL" starttime="20240219 17:15:49.706" endtime="20240219 17:15:54.661"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Addtoken">Addtoken</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

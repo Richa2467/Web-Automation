@@ -187,7 +187,7 @@ PYTHONPATH:
   /usr/lib/python38.zip
   /usr/lib/python3.8
   /usr/lib/python3.8/lib-dynload</msg>
-<msg time="2024-02-09T10:40:22.896581" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/LoginPageResource.robot' on line 11: Importing library 'Zoomba.DesktopLibrary' failed: ModuleNotFoundError: No module named 'Zoomba'
+<msg time="2024-02-09T10:40:22.896581" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/LoginPageResource.robot' on line 11: Importing library 'ApplicationLibrary.DesktopLibrary' failed: ModuleNotFoundError: No module named 'Zoomba'
 Traceback (most recent call last):
   None
 PYTHONPATH:
@@ -197,20 +197,20 @@ PYTHONPATH:
   /usr/lib/python38.zip
   /usr/lib/python3.8
   /usr/lib/python3.8/lib-dynload</msg>
-<msg time="2024-02-09T10:40:23.105756" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/UsersPageResource.robot' on line 567: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2024-02-09T10:40:23.105987" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/UsersPageResource.robot' on line 582: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2024-02-09T10:40:23.109090" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/UsersPageResource.robot' on line 902: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2024-02-09T10:40:23.109290" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/UsersPageResource.robot' on line 913: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2024-02-09T10:40:23.109432" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/UsersPageResource.robot' on line 923: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2024-02-09T10:40:23.109546" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/UsersPageResource.robot' on line 929: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2024-02-09T10:40:23.167013" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/TokenPageResource.robot' on line 205: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-09T10:40:23.105756" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/UsersPageResource.robot' on line 567: The 'RETURN' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-09T10:40:23.105987" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/UsersPageResource.robot' on line 582: The 'RETURN' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-09T10:40:23.109090" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/UsersPageResource.robot' on line 902: The 'RETURN' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-09T10:40:23.109290" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/UsersPageResource.robot' on line 913: The 'RETURN' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-09T10:40:23.109432" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/UsersPageResource.robot' on line 923: The 'RETURN' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-09T10:40:23.109546" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/UsersPageResource.robot' on line 929: The 'RETURN' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-09T10:40:23.167013" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/TokenPageResource.robot' on line 205: The 'RETURN' setting is deprecated. Use the 'RETURN' statement instead.</msg>
 <msg time="2024-02-09T10:40:23.196547" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/locators/TokenGroupLocator.robot' on line 2: Resource file '../Labels/TokenGroupLabel.robot' does not exist.</msg>
 <msg time="2024-02-09T10:40:23.196753" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/locators/TokenGroupLocator.robot' on line 3: Resource file '../Labels/LoginPageLabel.robot' does not exist.</msg>
 <msg time="2024-02-09T10:40:23.199187" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/TokenPageResource.robot' on line 11: Resource file '../Resources/AndroidResource.robot' does not exist.</msg>
-<msg time="2024-02-09T10:40:23.208857" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/AddNewSoftTokenResource.robot' on line 50: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2024-02-09T10:40:23.209016" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/AddNewSoftTokenResource.robot' on line 56: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-09T10:40:23.208857" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/AddNewSoftTokenResource.robot' on line 50: The 'RETURN' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-09T10:40:23.209016" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/AddNewSoftTokenResource.robot' on line 56: The 'RETURN' setting is deprecated. Use the 'RETURN' statement instead.</msg>
 <msg time="2024-02-09T10:40:23.229124" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/labels/CustomizeEmailMsgLabel.robot' on line 1: Singular section headers like '*** Variable ***' are deprecated. Use plural format like '*** Variables ***' instead.</msg>
-<msg time="2024-02-09T10:40:23.249733" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/AndroidResource.robot' on line 258: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-09T10:40:23.249733" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/AndroidResource.robot' on line 258: The 'RETURN' setting is deprecated. Use the 'RETURN' statement instead.</msg>
 <msg time="2024-02-09T10:40:23.284957" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/locators/TokenGroupLocator.robot' on line 39: Setting variable '${DeleteCheckBox}' failed: Variable '${DescriptionText}' not found.</msg>
 <msg time="2024-02-09T10:40:23.298462" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/locators/TokenGroupLocator.robot' on line 27: Setting variable '${DeleteLinkToken}' failed: Variable '${DescriptionText}' not found.</msg>
 <msg time="2024-02-09T10:40:23.311553" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/locators/TokenGroupLocator.robot' on line 34: Setting variable '${DeleteLinkUpdatedToken}' failed: Variable '${UpdateDecriptionText}' not found. Did you mean:

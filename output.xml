@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.8.10 on linux)" generated="2024-02-08T14:33:21.128127" rpa="false" schemaversion="5">
+<suite id="s1" name="Addtoken" source="/home/richatyagi/PycharmProjects/pythonProject/Project/Addtoken.robot">
+<test id="s1-t1" name="AddToken" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-08T14:33:21.242946" level="INFO">Opening browser 'Chrome' to base url 'https://mfa-alpha.surepassid.com/home.aspx'.</msg>
+<arg>${url}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-08T14:33:21.242493" elapsed="3.865733"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-08T14:33:25.111262" level="INFO">Typing text 'volansys.com' into text field 'xpath=//input[@id="tbxDomain_Name"]'.</msg>
+<arg>xpath=//input[@id="tbxDomain_Name"]</arg>
+<arg>volansys.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-08T14:33:25.109605" elapsed="0.124579"/>
+</kw>
+<status status="PASS" start="2024-02-08T14:33:21.241203" elapsed="3.993456"/>
+</test>
+<status status="PASS" start="2024-02-08T14:33:21.129051" elapsed="4.106493"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Addtoken">Addtoken</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

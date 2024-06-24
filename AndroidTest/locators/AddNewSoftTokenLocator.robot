@@ -1,0 +1,16 @@
+*** Variables ***
+#${selectTokenType}                      xpath://*[@id="ctl00_ContentPlaceHolder1_ddlDevice_TypeData"]
+${editPrintedSerialData}                 xpath://*[@id="ctl00_ContentPlaceHolder1_tbxPrinted_Serial_NumberData"]
+${editSerialNumberData}                  xpath://*[@id="ctl00_ContentPlaceHolder1_tbxSerial_NumberData"]
+${intialCounter}                         xpath://*[@id="ctl00_ContentPlaceHolder1_tbxStarting_CounterData"][@disabled="disabled"]
+${dataOTPType}                           xpath://*[@id="ctl00_ContentPlaceHolder1_ddlOTP_TypeData"]
+${dataOTPLength}                         xpath://*[@id="ctl00_ContentPlaceHolder1_ddlOTP_LengthData"]
+${AuthenticatorUsage}                    xpath://*[@id="ctl00_ContentPlaceHolder1_ddlMobileUsage"]
+${PushAuthOnly}                          xpath://*[@id="ctl00_ContentPlaceHolder1_ddlMobileUsage"][@value="0"]
+${OTPAuthOnly}                           xpath://*[@id="ctl00_ContentPlaceHolder1_ddlMobileUsage"][@value="1"]
+${OTP&PushAuth}                          xpath://*[@id="ctl00_ContentPlaceHolder1_ddlMobileUsage"][@value="2"]
+${maxUsesDataEditField}                  xpath://*[@id="ctl00_ContentPlaceHolder1_tbxMax_UsesData"]
+${tokenIDField}                          xpath://*[@id="ctl00_ContentPlaceHolder1_tbxUnique_IdentifierData"]
+${emailIconBesideTknId}                  xpath://*[@id="ctl00_ContentPlaceHolder1_btnSendUniqueEMail"]
+${smsToPhoneOptn}                        xpath://*[@id="ctl00_ContentPlaceHolder1_btnSendKeyCodeSMS"]
+

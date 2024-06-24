@@ -198,6 +198,11 @@ print("The examination will start from : %i / %i / %i" %exam_st_date)
 # y1 = int(input("Enter the number to count: "))
 #
 # print(checkgroup(x,y,x1,y1))
-a=1
-print(a)
+# a=1
+# print(a)
 
+a=int(input())
+b=float(input())
+print(a*b)
+a1 = 10+20+\
+      30 + 40
