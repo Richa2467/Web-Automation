@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.8.10 on linux)" generated="2024-02-08T16:46:33.931214" rpa="false" schemaversion="5">
+<suite id="s1" name="AndroidAppTest" source="/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/testcases/AndroidAppTest.robot">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="Open SurePass On Browser" owner="LoginPageResource">
+<kw name="Open Browser" owner="Web">
+<msg time="2024-02-08T16:46:34.478370" level="INFO">Opening browser 'Chrome' to base url 'https://mfa-dev.surepassid.com/default.aspx'.</msg>
+<arg>url=${url}</arg>
+<arg>browser=${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-08T16:46:34.477848" elapsed="3.146720"/>
+</kw>
+<kw name="Maximize Browser Window" owner="Web">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-08T16:46:37.625730" elapsed="0.108294"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="Web">
+<arg>${expectedElement}</arg>
+<arg>${StandardTimeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-02-08T16:46:37.735877" elapsed="0.067419"/>
+</kw>
+<status status="PASS" start="2024-02-08T16:46:34.477295" elapsed="3.326331"/>
+</kw>
+<kw name="Submit 2FA Page Using Email OTP" owner="LoginPageResource">
+<kw name="Submit First Login Page" owner="LoginPageResource">
+<kw name="Wait Until Element Is Enabled" owner="Web">
+<arg>${AccountNameLocator}</arg>
+<arg>${StandardTimeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-02-08T16:46:37.805828" elapsed="0.027210"/>
+</kw>
+<kw name="Input Text" owner="Web">
+<msg time="2024-02-08T16:46:37.834070" level="INFO">Typing text 'volansys.com' into text field 'css:[name='tbxDomain_Name']'.</msg>
+<arg>${AccountNameLocator}</arg>
+<arg>${AccountName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-08T16:46:37.833540" elapsed="0.086689"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="Web">
+<arg>${UserNameLocator}</arg>
+<arg>${StandardTimeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-02-08T16:46:37.920527" elapsed="0.021578"/>
+</kw>
+<kw name="Input Text" owner="Web">
+<msg time="2024-02-08T16:46:37.942943" level="INFO">Typing text 'VolQa1' into text field 'css:[name='tbxUser_Name']'.</msg>
+<arg>${UserNameLocator}</arg>
+<arg>${UserName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-08T16:46:37.942530" elapsed="0.069788"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="Web">
+<arg>${PasswordLocator}</arg>
+<arg>${StandardTimeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-02-08T16:46:38.012761" elapsed="0.020811"/>
+</kw>
+<kw name="Input Text" owner="Web">
+<msg time="2024-02-08T16:46:38.034405" level="INFO">Typing text 'Volansys@123' into text field 'css:[name='tbxPassword']'.</msg>
+<arg>${PasswordLocator}</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-08T16:46:38.034032" elapsed="0.074010"/>
+</kw>
+<kw name="Click Element" owner="Web">
+<msg time="2024-02-08T16:46:38.108817" level="INFO">Clicking element 'css:[id='btnLogin']'.</msg>
+<arg>${SignInButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-08T16:46:38.108483" elapsed="0.645312"/>
+</kw>
+<status status="PASS" start="2024-02-08T16:46:37.805402" elapsed="0.949284"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="Web">
+<arg>${OtpTextBox}</arg>
+<arg>${StandardTimeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-02-08T16:46:38.756281" elapsed="0.098852"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="Web">
+<arg>${EmailIcon}</arg>
+<arg>${StandardTimeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-02-08T16:46:38.856066" elapsed="0.036905"/>
+</kw>
+<kw name="Click Element" owner="Web">
+<msg time="2024-02-08T16:46:38.893895" level="INFO">Clicking element 'css:[id='btnEMailOTP']'.</msg>
+<arg>${EmailIcon}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-08T16:46:38.893467" elapsed="0.055702"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-08T16:46:43.950509" level="INFO">Slept 5 seconds.</msg>
+<arg>${SleepDelay5s}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-08T16:46:38.949916" elapsed="5.000986"/>
+</kw>
+<kw name="Open Mailbox" owner="ImapLibrary2">
+<msg time="2024-02-08T16:46:45.137487" level="FAIL">error: b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'</msg>
+<arg>host=${GmailHost}</arg>
+<arg>user=${GmailId}</arg>
+<arg>password=${GmailPassword}</arg>
+<doc>Open IMAP email client session to given ``host`` with given ``user`` and ``password``.</doc>
+<status status="FAIL" start="2024-02-08T16:46:43.951436" elapsed="1.189363">error: b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'</status>
+</kw>
+<kw name="Wait For Email" owner="ImapLibrary2">
+<var>${LATEST}</var>
+<arg>sender=${MailSenderId}</arg>
+<arg>status=UNSEEN</arg>
+<arg>timeout=300</arg>
+<doc>Wait for email message to arrived base on any given filter criteria.
+Returns email index of the latest email message received.</doc>
+<status status="NOT RUN" start="2024-02-08T16:46:45.143725" elapsed="0.000295"/>
+</kw>
+<kw name="Get Email Body" owner="ImapLibrary2">
+<var>${HTML}</var>
+<arg>${LATEST}</arg>
+<doc>Returns the decoded email body on multipart email message,
+otherwise returns the body text.</doc>
+<status status="NOT RUN" start="2024-02-08T16:46:45.145628" elapsed="0.000207"/>
+</kw>
+<kw name="Get Regexp Matches" owner="String">
+<var>${otpText}</var>
+<arg>${HTML}</arg>
+<arg>\\d{${OtpLength}}</arg>
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<status status="NOT RUN" start="2024-02-08T16:46:45.147279" elapsed="0.000233"/>
+</kw>
+<kw name="Delete Email" owner="ImapLibrary2">
+<arg>${LATEST}</arg>
+<doc>Delete email on given ``email_index``.</doc>
+<status status="NOT RUN" start="2024-02-08T16:46:45.148861" elapsed="0.000222"/>
+</kw>
+<kw name="Input Text" owner="Web">
+<arg>${OtpTextBox}</arg>
+<arg>${otpText}[0]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-02-08T16:46:45.150435" elapsed="0.000611"/>
+</kw>
+<kw name="Click Element" owner="Web">
+<arg>${VerifyOtpButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-02-08T16:46:45.152641" elapsed="0.000214"/>
+</kw>
+<kw name="Select the Checkbox if Terms of Use Page is visible" owner="LoginPageResource">
+<status status="NOT RUN" start="2024-02-08T16:46:45.154450" elapsed="0.000290"/>
+</kw>
+<arg>6</arg>
+<status status="FAIL" start="2024-02-08T16:46:37.804626" elapsed="7.350919">error: b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'</status>
+</kw>
+<arg>Open SurePass On Browser</arg>
+<arg>AND</arg>
+<arg>Submit 2FA Page Using Email OTP</arg>
+<arg>6</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="FAIL" start="2024-02-08T16:46:34.476847" elapsed="10.679281">error: b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'</status>
+</kw>
+<test id="s1-t1" name="Verify User is able to add the first token and recieve henceforth notifications after allowing the notifications permission." line="13">
+<tag>Android_Auth_007</tag>
+<tag>SurePassID_M1</tag>
+<tag>SurePassId_Mobile</tag>
+<status status="FAIL" start="2024-02-08T16:46:45.157016" elapsed="0.004563">Parent suite setup failed:
+error: b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'</status>
+</test>
+<kw name="Close All Browsers" owner="Web" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-02-08T16:46:45.165747" elapsed="0.099462"/>
+</kw>
+<status status="FAIL" start="2024-02-08T16:46:33.932130" elapsed="11.333390">Suite setup failed:
+error: b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'</status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Android_Auth_007</stat>
+<stat pass="0" fail="1" skip="0">SurePassID_M1</stat>
+<stat pass="0" fail="1" skip="0">SurePassId_Mobile</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="AndroidAppTest">AndroidAppTest</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-02-08T16:46:33.956856" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/LoginPageResource.robot' on line 155: The 'RETURN' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-08T16:46:34.068115" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/LoginPageResource.robot' on line 11: Importing library 'ApplicationLibrary.DesktopLibrary' failed: ModuleNotFoundError: No module named 'Zoomba'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /home/richatyagi/PycharmProjects/pythonProject/AndroidTest/testcases
+  /home/richatyagi/PycharmProjects/pythonProject/AndroidTest/testcases
+  /home/richatyagi/PycharmProjects/pythonProject/.venv/lib/python3.8/site-packages
+  /usr/lib/python38.zip
+  /usr/lib/python3.8
+  /usr/lib/python3.8/lib-dynload</msg>
+<msg time="2024-02-08T16:46:34.176150" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/UsersPageResource.robot' on line 567: The 'RETURN' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-08T16:46:34.176410" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/UsersPageResource.robot' on line 582: The 'RETURN' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-08T16:46:34.179179" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/UsersPageResource.robot' on line 902: The 'RETURN' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-08T16:46:34.179387" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/UsersPageResource.robot' on line 913: The 'RETURN' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-08T16:46:34.179632" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/UsersPageResource.robot' on line 923: The 'RETURN' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-08T16:46:34.179788" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/UsersPageResource.robot' on line 929: The 'RETURN' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-08T16:46:34.210578" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/TokenPageResource.robot' on line 205: The 'RETURN' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-08T16:46:34.232880" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/locators/TokenGroupLocator.robot' on line 2: Resource file '../Labels/TokenGroupLabel.robot' does not exist.</msg>
+<msg time="2024-02-08T16:46:34.233128" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/locators/TokenGroupLocator.robot' on line 3: Resource file '../Labels/LoginPageLabel.robot' does not exist.</msg>
+<msg time="2024-02-08T16:46:34.234604" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/TokenPageResource.robot' on line 11: Resource file '../Resources/AndroidResource.robot' does not exist.</msg>
+<msg time="2024-02-08T16:46:34.243554" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/AddNewSoftTokenResource.robot' on line 50: The 'RETURN' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-08T16:46:34.243727" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/AddNewSoftTokenResource.robot' on line 56: The 'RETURN' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-08T16:46:34.263726" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/labels/CustomizeEmailMsgLabel.robot' on line 1: Singular section headers like '*** Variable ***' are deprecated. Use plural format like '*** Variables ***' instead.</msg>
+<msg time="2024-02-08T16:46:34.279436" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/AndroidResource.robot' on line 258: The 'RETURN' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-08T16:46:34.311749" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/locators/TokenGroupLocator.robot' on line 39: Setting variable '${DeleteCheckBox}' failed: Variable '${DescriptionText}' not found.</msg>
+<msg time="2024-02-08T16:46:34.323576" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/locators/TokenGroupLocator.robot' on line 27: Setting variable '${DeleteLinkToken}' failed: Variable '${DescriptionText}' not found.</msg>
+<msg time="2024-02-08T16:46:34.338117" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/locators/TokenGroupLocator.robot' on line 34: Setting variable '${DeleteLinkUpdatedToken}' failed: Variable '${UpdateDecriptionText}' not found. Did you mean:
+    ${UpdateDecriptionTextGrid}
+    ${NewUpdatedDecriptionText}
+    ${UpdateDecription}</msg>
+<msg time="2024-02-08T16:46:34.351525" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/locators/TokenGroupLocator.robot' on line 25: Setting variable '${EditDescriptionGrid}' failed: Variable '${DescriptionText}' not found.</msg>
+<msg time="2024-02-08T16:46:34.365408" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/locators/TokenGroupLocator.robot' on line 38: Setting variable '${GetValueFromEditDescriptionGrid}' failed: Variable '${DescriptionText}' not found.</msg>
+<msg time="2024-02-08T16:46:34.378446" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/locators/TokenGroupLocator.robot' on line 28: Setting variable '${IdentifyToken}' failed: Variable '${DescriptionText}' not found.</msg>
+<msg time="2024-02-08T16:46:34.392678" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/locators/TokenGroupLocator.robot' on line 33: Setting variable '${NewUpdatedDecriptionText}' failed: Variable '${UpdateDecriptionText}' not found. Did you mean:
+    ${UpdateDecriptionTextGrid}
+    ${NewUpdatedDecriptionText}
+    ${UpdateDecription}</msg>
+<msg time="2024-02-08T16:46:34.404691" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/locators/TokenGroupLocator.robot' on line 31: Setting variable '${SecoundUserUpdateDecription}' failed: Variable '${UpdateDecriptionText}' not found. Did you mean:
+    ${UpdateDecriptionTextGrid}
+    ${UpdateDecription}</msg>
+<msg time="2024-02-08T16:46:34.418665" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/locators/TokenGroupLocator.robot' on line 35: Setting variable '${UpdatedDeleteCheckBox}' failed: Variable '${UpdateDecriptionText}' not found. Did you mean:
+    ${UpdateDecriptionTextGrid}
+    ${UpdateDecription}</msg>
+<msg time="2024-02-08T16:46:34.431625" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/locators/TokenGroupLocator.robot' on line 32: Setting variable '${UpdatedDeleteLinkToken}' failed: Variable '${UpdateDecriptionText}' not found. Did you mean:
+    ${UpdateDecriptionTextGrid}
+    ${UpdateDecription}</msg>
+<msg time="2024-02-08T16:46:34.443788" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/locators/TokenGroupLocator.robot' on line 26: Setting variable '${UpdateDecriptionTextGrid}' failed: Variable '${UpdateDecriptionText}' not found. Did you mean:
+    ${UpdateDecriptionTextGrid}
+    ${UpdateDecription}</msg>
+<msg time="2024-02-08T16:46:34.456986" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/locators/TokenGroupLocator.robot' on line 29: Setting variable '${UpdateIdentifyToken}' failed: Variable '${DescriptionText}' not found.</msg>
+<msg time="2024-02-08T16:46:34.469908" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/locators/TokenGroupLocator.robot' on line 41: Setting variable '${VerifiedDeletedToken}' failed: Variable '${DescriptionText}' not found.</msg>
+</errors>
+</robot>

@@ -1,0 +1,1771 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.10 on linux)" generated="20240402 18:39:34.743" rpa="false">
+<suite id="s1" name="AndroidAppTest" source="/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/testcases/AndroidAppTest.robot">
+<kw name="Run Keywords" library="BuiltIn" type="setup">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>Open SurePass On Browser</arg>
+<arg>AND</arg>
+<arg>Submit First Login Page</arg>
+<arg>AND</arg>
+<arg>Get OTP From Mobile APP And Enter It</arg>
+</arguments>
+<kw name="Open SurePass On Browser" library="LoginPageResource">
+<kw name="Open Browser" library="Web">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>url=${url}</arg>
+<arg>browser=${Browser}</arg>
+</arguments>
+<msg timestamp="20240402 18:39:35.132" level="INFO">Opening browser 'chrome' to base url 'https://mfa-alpha.surepassid.com/default.aspx'.</msg>
+<status status="PASS" starttime="20240402 18:39:35.131" endtime="20240402 18:39:40.338"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Web">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240402 18:39:40.339" endtime="20240402 18:39:40.451"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Web">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${expectedElement}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:39:40.452" endtime="20240402 18:39:40.523"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:39:35.131" endtime="20240402 18:39:40.523"></status>
+</kw>
+<kw name="Submit First Login Page" library="LoginPageResource">
+<kw name="Wait Until Element Is Enabled" library="Web">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${AccountNameLocator}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:39:40.525" endtime="20240402 18:39:40.594"></status>
+</kw>
+<kw name="Input Text" library="Web">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${AccountNameLocator}</arg>
+<arg>${AccountName}</arg>
+</arguments>
+<msg timestamp="20240402 18:39:40.595" level="INFO">Typing text 'volansys.com' into text field 'css:[name='tbxDomain_Name']'.</msg>
+<status status="PASS" starttime="20240402 18:39:40.594" endtime="20240402 18:39:40.712"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="Web">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${UserNameLocator}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:39:40.712" endtime="20240402 18:39:40.736"></status>
+</kw>
+<kw name="Input Text" library="Web">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${UserNameLocator}</arg>
+<arg>${UserName}</arg>
+</arguments>
+<msg timestamp="20240402 18:39:40.737" level="INFO">Typing text 'Kalpesh.Patel' into text field 'css:[name='tbxUser_Name']'.</msg>
+<status status="PASS" starttime="20240402 18:39:40.737" endtime="20240402 18:39:40.819"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="Web">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${PasswordLocator}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:39:40.819" endtime="20240402 18:39:40.844"></status>
+</kw>
+<kw name="Input Text" library="Web">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${PasswordLocator}</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20240402 18:39:40.845" level="INFO">Typing text 'Volansys@123' into text field 'css:[name='tbxPassword']'.</msg>
+<status status="PASS" starttime="20240402 18:39:40.844" endtime="20240402 18:39:40.923"></status>
+</kw>
+<kw name="Click Element" library="Web">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SignInButton}</arg>
+</arguments>
+<msg timestamp="20240402 18:39:40.923" level="INFO">Clicking element 'css:[id='btnLogin']'.</msg>
+<status status="PASS" starttime="20240402 18:39:40.923" endtime="20240402 18:39:41.613"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:39:40.524" endtime="20240402 18:39:41.614"></status>
+</kw>
+<kw name="Get OTP From Mobile APP And Enter It" library="LoginPageResource">
+<kw name="Open Test Application" library="AndroidResource">
+<kw name="Open Application" library="Mobile">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>${AppiumURL}</arg>
+<arg>automationName=${ANDROID_AUTOMATION_NAME}</arg>
+<arg>platformName=${ANDROID_PLATFORM_NAME}</arg>
+<arg>deviceName=${AndroidDeviceName}</arg>
+<arg>appPackage=${AndroidSurePassPackageName}</arg>
+<arg>appActivity=${AndroidSurePassActivityName}</arg>
+<arg>noReset=true</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:39:41.619" endtime="20240402 18:39:57.567"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:39:41.617" endtime="20240402 18:39:57.567"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Mobile">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${GetAppOTP}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:39:57.567" endtime="20240402 18:39:59.645"></status>
+</kw>
+<kw name="Get Text" library="Mobile">
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<arguments>
+<arg>${GetAppOTP}</arg>
+</arguments>
+<assign>
+<var>${AppOTP}</var>
+</assign>
+<msg timestamp="20240402 18:39:59.856" level="INFO">Element '//android.widget.TextView[@resource-id="com.surepassid.otp.authenticator:id/token_value"]' text is '251 629' </msg>
+<msg timestamp="20240402 18:39:59.856" level="INFO">${AppOTP} = 251 629</msg>
+<status status="PASS" starttime="20240402 18:39:59.646" endtime="20240402 18:39:59.856"></status>
+</kw>
+<kw name="Input Text" library="Web">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="tbxOTP"]</arg>
+<arg>${AppOTP}</arg>
+</arguments>
+<msg timestamp="20240402 18:39:59.857" level="INFO">Typing text '251 629' into text field '//*[@id="tbxOTP"]'.</msg>
+<status status="PASS" starttime="20240402 18:39:59.856" endtime="20240402 18:39:59.937"></status>
+</kw>
+<kw name="Click Element" library="Web">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="btnVerifyOtp"]</arg>
+</arguments>
+<msg timestamp="20240402 18:39:59.938" level="INFO">Clicking element '//*[@id="btnVerifyOtp"]'.</msg>
+<status status="PASS" starttime="20240402 18:39:59.938" endtime="20240402 18:40:03.735"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="Web">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${HomeTab}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:03.735" endtime="20240402 18:40:03.766"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:39:41.615" endtime="20240402 18:40:03.766"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:39:35.130" endtime="20240402 18:40:03.766"></status>
+</kw>
+<test id="s1-t1" name="Verify User is able to update Token name">
+<kw name="Delete Token If Existing" library="TokenPageResource">
+<arguments>
+<arg>Tinker30</arg>
+</arguments>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${TokenName}</arg>
+</arguments>
+<msg timestamp="20240402 18:40:03.768" level="INFO">${TokenName} = Tinker30</msg>
+<status status="PASS" starttime="20240402 18:40:03.768" endtime="20240402 18:40:03.768"></status>
+</kw>
+<kw name="Go To Token Page And Search Token" library="TokenPageResource">
+<arguments>
+<arg>${TokenName}</arg>
+</arguments>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${SleepDelay5s}</arg>
+</arguments>
+<msg timestamp="20240402 18:40:08.770" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240402 18:40:03.769" endtime="20240402 18:40:08.770"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Web">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${TokensTab}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:08.770" endtime="20240402 18:40:08.827"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="Web">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${TokensTab}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:08.827" endtime="20240402 18:40:08.850"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>1s</arg>
+<arg>Web.Mouse Over</arg>
+<arg>${TokensTab}</arg>
+</arguments>
+<kw name="Mouse Over" library="Web">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${TokensTab}</arg>
+</arguments>
+<msg timestamp="20240402 18:40:08.851" level="INFO">Simulating Mouse Over on element 'xpath://*[@id="tab_Tokenslink"]'.</msg>
+<status status="PASS" starttime="20240402 18:40:08.851" endtime="20240402 18:40:09.123"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:40:08.850" endtime="20240402 18:40:09.123"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>1s</arg>
+<arg>Web.Click Element</arg>
+<arg>${TokensTab}</arg>
+</arguments>
+<kw name="Click Element" library="Web">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${TokensTab}</arg>
+</arguments>
+<msg timestamp="20240402 18:40:09.126" level="INFO">Clicking element 'xpath://*[@id="tab_Tokenslink"]'.</msg>
+<status status="PASS" starttime="20240402 18:40:09.125" endtime="20240402 18:40:11.657"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:40:09.124" endtime="20240402 18:40:11.657"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Web">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SerialNoFilterDropdown}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:11.657" endtime="20240402 18:40:11.690"></status>
+</kw>
+<kw name="Select From List By Value" library="Web">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>${SerialNoFilterDropdown}</arg>
+<arg>${DropdownType}</arg>
+</arguments>
+<msg timestamp="20240402 18:40:11.690" level="INFO">Selecting options from selection list 'xpath://*[@id="ctl00_ContentPlaceHolder1_ddlSerialNumberFilterComparator"]' by value 3.</msg>
+<status status="PASS" starttime="20240402 18:40:11.690" endtime="20240402 18:40:11.790"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Web">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SrNoFilterSearchField}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:11.790" endtime="20240402 18:40:12.967"></status>
+</kw>
+<kw name="Input Text" library="Web">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${SrNoFilterSearchField}</arg>
+<arg>${TokenName}</arg>
+</arguments>
+<msg timestamp="20240402 18:40:12.967" level="INFO">Typing text 'Tinker30' into text field 'xpath://*[@id="ctl00_ContentPlaceHolder1_tbxSerialNumber"]'.</msg>
+<status status="PASS" starttime="20240402 18:40:12.967" endtime="20240402 18:40:13.058"></status>
+</kw>
+<kw name="Click Element" library="Web">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SrNoFilterSearchIcon}</arg>
+</arguments>
+<msg timestamp="20240402 18:40:13.058" level="INFO">Clicking element 'xpath://*[@id="ctl00_ContentPlaceHolder1_btnFindSerial"]'.</msg>
+<status status="PASS" starttime="20240402 18:40:13.058" endtime="20240402 18:40:13.121"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${SleepDelay10s}</arg>
+</arguments>
+<msg timestamp="20240402 18:40:23.122" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20240402 18:40:13.121" endtime="20240402 18:40:23.122"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:40:03.769" endtime="20240402 18:40:23.122"></status>
+</kw>
+<kw name="Get Element Count" library="Web">
+<doc>Returns the number of elements matching ``locator``.</doc>
+<arguments>
+<arg>xpath://*[text()= "${TokenName}"]/parent::div//parent::div//*[@src="images/icons-mini/trash_black_white.png"]</arg>
+</arguments>
+<assign>
+<var>${Count}</var>
+</assign>
+<msg timestamp="20240402 18:40:23.159" level="INFO">${Count} = 0</msg>
+<status status="PASS" starttime="20240402 18:40:23.123" endtime="20240402 18:40:23.159"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${Count} &gt; 0</arg>
+<arg>Delete Tokens</arg>
+<arg>${Count}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:23.160" endtime="20240402 18:40:23.160"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:40:03.767" endtime="20240402 18:40:23.161"></status>
+</kw>
+<kw name="Go To User Details Page" library="UsersPageResource">
+<arguments>
+<arg>${UserName}</arg>
+</arguments>
+<kw name="Wait Until the Update Icon Disappear" library="LoginPageResource">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>100ms</arg>
+</arguments>
+<msg timestamp="20240402 18:40:23.264" level="INFO">Slept 100 milliseconds</msg>
+<status status="PASS" starttime="20240402 18:40:23.163" endtime="20240402 18:40:23.264"></status>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="Web">
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<arguments>
+<arg>${UpdateIcon}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:23.265" endtime="20240402 18:40:23.320"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:40:23.162" endtime="20240402 18:40:23.320"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="Web">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${UsersTab}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:23.321" endtime="20240402 18:40:23.345"></status>
+</kw>
+<kw name="Click Element" library="Web">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${UsersTab}</arg>
+</arguments>
+<msg timestamp="20240402 18:40:23.346" level="INFO">Clicking element 'xpath://*[@id="tab_Userslink"]'.</msg>
+<status status="PASS" starttime="20240402 18:40:23.346" endtime="20240402 18:40:24.539"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="Web">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${selectUserFilter}/option[@value='99']</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:24.540" endtime="20240402 18:40:24.572"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>1s</arg>
+<arg>Web.Select From List by Value</arg>
+<arg>${selectUserFilter}</arg>
+<arg>99</arg>
+</arguments>
+<kw name="Select From List By Value" library="Web">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>${selectUserFilter}</arg>
+<arg>99</arg>
+</arguments>
+<msg timestamp="20240402 18:40:24.573" level="INFO">Selecting options from selection list 'xpath=//*[@id="ctl00_ContentPlaceHolder1_ddlRoleFilter"]' by value 99.</msg>
+<status status="PASS" starttime="20240402 18:40:24.573" endtime="20240402 18:40:24.652"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:40:24.572" endtime="20240402 18:40:24.652"></status>
+</kw>
+<kw name="Wait Until the Update Icon Disappear" library="LoginPageResource">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>100ms</arg>
+</arguments>
+<msg timestamp="20240402 18:40:24.753" level="INFO">Slept 100 milliseconds</msg>
+<status status="PASS" starttime="20240402 18:40:24.653" endtime="20240402 18:40:24.753"></status>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="Web">
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<arguments>
+<arg>${UpdateIcon}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:24.754" endtime="20240402 18:40:25.262"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:40:24.652" endtime="20240402 18:40:25.262"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="Web">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${RowsFilter}/option[@value='200']</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:25.262" endtime="20240402 18:40:25.289"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>1s</arg>
+<arg>Web.Select From List by Value</arg>
+<arg>${RowsFilter}</arg>
+<arg>200</arg>
+</arguments>
+<kw name="Select From List By Value" library="Web">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>${RowsFilter}</arg>
+<arg>200</arg>
+</arguments>
+<msg timestamp="20240402 18:40:25.290" level="INFO">Selecting options from selection list 'xpath=//*[@id='ctl00_ContentPlaceHolder1_ddlPageSize']' by value 200.</msg>
+<status status="PASS" starttime="20240402 18:40:25.290" endtime="20240402 18:40:25.356"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:40:25.289" endtime="20240402 18:40:25.356"></status>
+</kw>
+<kw name="Wait Until the Update Icon Disappear" library="LoginPageResource">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>100ms</arg>
+</arguments>
+<msg timestamp="20240402 18:40:25.457" level="INFO">Slept 100 milliseconds</msg>
+<status status="PASS" starttime="20240402 18:40:25.356" endtime="20240402 18:40:25.457"></status>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="Web">
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<arguments>
+<arg>${UpdateIcon}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:25.458" endtime="20240402 18:40:26.738"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:40:25.356" endtime="20240402 18:40:26.738"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="Web">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${UserNameFilter}/option[@value='3']</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:26.739" endtime="20240402 18:40:26.763"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>1s</arg>
+<arg>Web.Select From List by Value</arg>
+<arg>${UserNameFilter}</arg>
+<arg>3</arg>
+</arguments>
+<kw name="Select From List By Value" library="Web">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>${UserNameFilter}</arg>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20240402 18:40:26.764" level="INFO">Selecting options from selection list 'xpath=//*[@id="ctl00_ContentPlaceHolder1_ddlFilterComparator"]' by value 3.</msg>
+<status status="PASS" starttime="20240402 18:40:26.764" endtime="20240402 18:40:26.825"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:40:26.764" endtime="20240402 18:40:26.825"></status>
+</kw>
+<kw name="Wait Until the Update Icon Disappear" library="LoginPageResource">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>100ms</arg>
+</arguments>
+<msg timestamp="20240402 18:40:26.926" level="INFO">Slept 100 milliseconds</msg>
+<status status="PASS" starttime="20240402 18:40:26.826" endtime="20240402 18:40:26.927"></status>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="Web">
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<arguments>
+<arg>${UpdateIcon}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:26.927" endtime="20240402 18:40:28.147"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:40:26.825" endtime="20240402 18:40:28.147"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="Web">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${UserNameTextFilter}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:28.147" endtime="20240402 18:40:28.180"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>1s</arg>
+<arg>Web.Input Text</arg>
+<arg>${UserNameTextFilter}</arg>
+<arg>${UserName}</arg>
+</arguments>
+<kw name="Input Text" library="Web">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${UserNameTextFilter}</arg>
+<arg>${UserName}</arg>
+</arguments>
+<msg timestamp="20240402 18:40:28.181" level="INFO">Typing text 'Kalpesh.Patel' into text field 'xpath=//*[@id="ctl00_ContentPlaceHolder1_tbxUserFilter"]'.</msg>
+<status status="PASS" starttime="20240402 18:40:28.181" endtime="20240402 18:40:28.302"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:40:28.180" endtime="20240402 18:40:28.302"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="Web">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${UserSearchBtn}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:28.303" endtime="20240402 18:40:28.348"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>1s</arg>
+<arg>Web.Click Element</arg>
+<arg>${UserSearchBtn}</arg>
+</arguments>
+<kw name="Click Element" library="Web">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${UserSearchBtn}</arg>
+</arguments>
+<msg timestamp="20240402 18:40:28.349" level="INFO">Clicking element 'xpath=//*[@id="ctl00_ContentPlaceHolder1_btnFilterUsers"]'.</msg>
+<status status="PASS" starttime="20240402 18:40:28.348" endtime="20240402 18:40:28.406"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:40:28.348" endtime="20240402 18:40:28.406"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Web">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>//*[text()= "${UserName}"]/parent::div//parent::div//*[@src="images/icons-mini/edit.png"]</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:28.406" endtime="20240402 18:40:28.430"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="Web">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>//*[text()= "${UserName}"]/parent::div//parent::div//*[@src="images/icons-mini/edit.png"]</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:28.431" endtime="20240402 18:40:28.451"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>1s</arg>
+<arg>Web.Click Element</arg>
+<arg>//*[text()= "${UserName}"]/parent::div//parent::div//*[@src="images/icons-mini/edit.png"]</arg>
+</arguments>
+<kw name="Click Element" library="Web">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[text()= "${UserName}"]/parent::div//parent::div//*[@src="images/icons-mini/edit.png"]</arg>
+</arguments>
+<msg timestamp="20240402 18:40:28.452" level="INFO">Clicking element '//*[text()= "Kalpesh.Patel"]/parent::div//parent::div//*[@src="images/icons-mini/edit.png"]'.</msg>
+<kw name="Capture Page Screenshot" library="Web">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 18:40:29.694" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1485.png"&gt;&lt;img src="selenium-screenshot-1485.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240402 18:40:29.552" endtime="20240402 18:40:29.694"></status>
+</kw>
+<msg timestamp="20240402 18:40:29.696" level="FAIL">StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=123.0.6312.86)
+</msg>
+<status status="FAIL" starttime="20240402 18:40:28.452" endtime="20240402 18:40:29.696"></status>
+</kw>
+<kw name="Click Element" library="Web">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[text()= "${UserName}"]/parent::div//parent::div//*[@src="images/icons-mini/edit.png"]</arg>
+</arguments>
+<msg timestamp="20240402 18:40:30.697" level="INFO">Clicking element '//*[text()= "Kalpesh.Patel"]/parent::div//parent::div//*[@src="images/icons-mini/edit.png"]'.</msg>
+<status status="PASS" starttime="20240402 18:40:30.696" endtime="20240402 18:40:30.823"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:40:28.451" endtime="20240402 18:40:30.823"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Web">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${UserDetailPageHeader}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:30.825" endtime="20240402 18:40:30.895"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:40:23.161" endtime="20240402 18:40:30.895"></status>
+</kw>
+<kw name="Go To Add New Soft Token Page From User Details Page" library="UsersPageResource">
+<kw name="Scroll Page To Location" library="UsersPageResource">
+<arguments>
+<arg>0</arg>
+<arg>2000</arg>
+</arguments>
+<kw name="Execute Javascript" library="Web">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.scrollTo(${x_location},${y_location})</arg>
+</arguments>
+<msg timestamp="20240402 18:40:30.898" level="INFO">Executing JavaScript:
+window.scrollTo(0,2000)
+Without any arguments.</msg>
+<status status="PASS" starttime="20240402 18:40:30.898" endtime="20240402 18:40:30.905"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:40:30.897" endtime="20240402 18:40:30.906"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Web">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${AddNewSoftToken}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:30.906" endtime="20240402 18:40:30.939"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="Web">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${AddNewSoftToken}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:30.939" endtime="20240402 18:40:30.962"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>1s</arg>
+<arg>Web.Click Element</arg>
+<arg>${AddNewSoftToken}</arg>
+</arguments>
+<kw name="Click Element" library="Web">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${AddNewSoftToken}</arg>
+</arguments>
+<msg timestamp="20240402 18:40:30.963" level="INFO">Clicking element 'xpath=//*[@id="ctl00_ContentPlaceHolder1_hplNew"]'.</msg>
+<kw name="Capture Page Screenshot" library="Web">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240402 18:40:32.548" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1486.png"&gt;&lt;img src="selenium-screenshot-1486.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240402 18:40:32.402" endtime="20240402 18:40:32.548"></status>
+</kw>
+<msg timestamp="20240402 18:40:32.548" level="FAIL">StaleElementReferenceException: Message: stale element reference: stale element not found
+  (Session info: chrome=123.0.6312.86)
+</msg>
+<status status="FAIL" starttime="20240402 18:40:30.963" endtime="20240402 18:40:32.548"></status>
+</kw>
+<kw name="Click Element" library="Web">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${AddNewSoftToken}</arg>
+</arguments>
+<msg timestamp="20240402 18:40:33.550" level="INFO">Clicking element 'xpath=//*[@id="ctl00_ContentPlaceHolder1_hplNew"]'.</msg>
+<status status="PASS" starttime="20240402 18:40:33.549" endtime="20240402 18:40:33.628"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:40:30.962" endtime="20240402 18:40:33.628"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Web">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${TokenPageHeader}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:33.629" endtime="20240402 18:40:33.649"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:40:30.896" endtime="20240402 18:40:33.649"></status>
+</kw>
+<kw name="Add Token To The User Account for Alpha" library="TokenPageResource">
+<arguments>
+<arg>UserDefinedName=Tinker30</arg>
+<arg>AuthType=2</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Web">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${UserDefinedNameField}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:33.650" endtime="20240402 18:40:35.371"></status>
+</kw>
+<kw name="Wait Until the Update Icon Disappear" library="LoginPageResource">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>100ms</arg>
+</arguments>
+<msg timestamp="20240402 18:40:35.473" level="INFO">Slept 100 milliseconds</msg>
+<status status="PASS" starttime="20240402 18:40:35.372" endtime="20240402 18:40:35.474"></status>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="Web">
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<arguments>
+<arg>${UpdateIcon}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:35.475" endtime="20240402 18:40:35.562"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:40:35.372" endtime="20240402 18:40:35.562"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${TokenType}' != 'None'</arg>
+<arg>Run Keyword</arg>
+<arg>Select Token Type</arg>
+<arg>${TokenType}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:35.563" endtime="20240402 18:40:35.564"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${UserDefinedName}' != 'None'</arg>
+<arg>Web.Input Text</arg>
+<arg>${UserDefinedNameField}</arg>
+<arg>${UserDefinedName}</arg>
+</arguments>
+<kw name="Input Text" library="Web">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${UserDefinedNameField}</arg>
+<arg>${UserDefinedName}</arg>
+</arguments>
+<msg timestamp="20240402 18:40:35.567" level="INFO">Typing text 'Tinker30' into text field 'xpath://*[@id="ctl00_ContentPlaceHolder1_tbxToken_Alias"]'.</msg>
+<status status="PASS" starttime="20240402 18:40:35.566" endtime="20240402 18:40:35.867"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:40:35.565" endtime="20240402 18:40:35.867"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${AuthType}' != 'None'</arg>
+<arg>Wait Until Keyword Succeeds</arg>
+<arg>5x</arg>
+<arg>1s</arg>
+<arg>Web.Select From List by Value</arg>
+<arg>${AuthUsageDropdown}</arg>
+<arg>9</arg>
+</arguments>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>1s</arg>
+<arg>Web.Select From List by Value</arg>
+<arg>${AuthUsageDropdown}</arg>
+<arg>9</arg>
+</arguments>
+<kw name="Select From List By Value" library="Web">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>${AuthUsageDropdown}</arg>
+<arg>9</arg>
+</arguments>
+<msg timestamp="20240402 18:40:35.869" level="INFO">Selecting options from selection list 'xpath://*[@id="ctl00_ContentPlaceHolder1_ddlDevice_TypeData"]' by value 9.</msg>
+<status status="PASS" starttime="20240402 18:40:35.869" endtime="20240402 18:40:35.944"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:40:35.869" endtime="20240402 18:40:35.945"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:40:35.868" endtime="20240402 18:40:35.945"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="Web">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${AuthUsageDropdown}/option[@value='9']</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:35.945" endtime="20240402 18:40:35.986"></status>
+</kw>
+<kw name="Select Checkbox" library="Web">
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<arguments>
+<arg>ctl00$ContentPlaceHolder1$ucMobileUsage$cbOath</arg>
+</arguments>
+<msg timestamp="20240402 18:40:35.986" level="INFO">Selecting checkbox 'ctl00$ContentPlaceHolder1$ucMobileUsage$cbOath'.</msg>
+<status status="PASS" starttime="20240402 18:40:35.986" endtime="20240402 18:40:36.024"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20240402 18:40:41.025" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240402 18:40:36.024" endtime="20240402 18:40:41.025"></status>
+</kw>
+<kw name="Select Checkbox" library="Web">
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<arguments>
+<arg>ctl00$ContentPlaceHolder1$ucMobileUsage$cbPush</arg>
+</arguments>
+<msg timestamp="20240402 18:40:41.027" level="INFO">Selecting checkbox 'ctl00$ContentPlaceHolder1$ucMobileUsage$cbPush'.</msg>
+<status status="PASS" starttime="20240402 18:40:41.026" endtime="20240402 18:40:41.126"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20240402 18:40:46.127" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240402 18:40:41.126" endtime="20240402 18:40:46.127"></status>
+</kw>
+<kw name="Unselect Checkbox" library="Web">
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<arguments>
+<arg>ctl00$ContentPlaceHolder1$ucMobileUsage$cbRequireCredentials</arg>
+</arguments>
+<msg timestamp="20240402 18:40:46.128" level="INFO">Unselecting checkbox 'ctl00$ContentPlaceHolder1$ucMobileUsage$cbRequireCredentials'.</msg>
+<status status="PASS" starttime="20240402 18:40:46.128" endtime="20240402 18:40:46.226"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${OTPType}' != 'None'</arg>
+<arg>Run Keywords</arg>
+<arg>Web.Scroll Element Into View</arg>
+<arg>${CopyrightSection}</arg>
+<arg>AND</arg>
+<arg>Web.Select From List by Value</arg>
+<arg>${OTPTypeDropdown}</arg>
+<arg>${OTPType}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:46.226" endtime="20240402 18:40:46.226"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${TokenStatus}' != 'None'</arg>
+<arg>Run Keyword</arg>
+<arg>Web.Select From List by Value</arg>
+<arg>${TokenStatusLocator}</arg>
+<arg>${TokenStatus}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:46.227" endtime="20240402 18:40:46.227"></status>
+</kw>
+<kw name="Scroll Element Into View" library="Web">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${CopyrightSection}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:46.228" endtime="20240402 18:40:46.514"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${OTPWindowSize}' != 'None'</arg>
+<arg>Web.Input Text</arg>
+<arg>${OTPWindowSizeLocator}</arg>
+<arg>${OTPWindowSize}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:46.515" endtime="20240402 18:40:46.516"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${OTPLen}' != 'None'</arg>
+<arg>Run Keyword</arg>
+<arg>Web.Select From List by Value</arg>
+<arg>${OTPLength}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:46.517" endtime="20240402 18:40:46.518"></status>
+</kw>
+<kw name="Wait Until the Update Icon Disappear" library="LoginPageResource">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>100ms</arg>
+</arguments>
+<msg timestamp="20240402 18:40:46.621" level="INFO">Slept 100 milliseconds</msg>
+<status status="PASS" starttime="20240402 18:40:46.520" endtime="20240402 18:40:46.621"></status>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="Web">
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<arguments>
+<arg>${UpdateIcon}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:46.622" endtime="20240402 18:40:47.685"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:40:46.519" endtime="20240402 18:40:47.685"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>1s</arg>
+<arg>Web.Click Element</arg>
+<arg>${TokenAddButton}</arg>
+</arguments>
+<kw name="Click Element" library="Web">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${TokenAddButton}</arg>
+</arguments>
+<msg timestamp="20240402 18:40:47.685" level="INFO">Clicking element 'xpath://*[@id="ctl00_ContentPlaceHolder1_btnAction"]'.</msg>
+<status status="PASS" starttime="20240402 18:40:47.685" endtime="20240402 18:40:47.735"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:40:47.685" endtime="20240402 18:40:47.735"></status>
+</kw>
+<kw name="Wait Until the Update Icon Disappear" library="LoginPageResource">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>100ms</arg>
+</arguments>
+<msg timestamp="20240402 18:40:47.836" level="INFO">Slept 100 milliseconds</msg>
+<status status="PASS" starttime="20240402 18:40:47.736" endtime="20240402 18:40:47.836"></status>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="Web">
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<arguments>
+<arg>${UpdateIcon}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:47.837" endtime="20240402 18:40:48.382"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:40:47.735" endtime="20240402 18:40:48.382"></status>
+</kw>
+<kw name="Verify Success Toast Message" library="TokenPageResource">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${SleepDelay2s}</arg>
+</arguments>
+<msg timestamp="20240402 18:40:50.384" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20240402 18:40:48.383" endtime="20240402 18:40:50.385"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Web">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${ToastSuccess}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:50.386" endtime="20240402 18:40:50.502"></status>
+</kw>
+<kw name="Element Text Should Be" library="Web">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>${ToastSuccess}</arg>
+<arg>Success</arg>
+</arguments>
+<msg timestamp="20240402 18:40:50.503" level="INFO">Verifying element 'xpath=//*[@class="jq-toast-heading"]' contains exact text 'Success'.</msg>
+<status status="PASS" starttime="20240402 18:40:50.503" endtime="20240402 18:40:50.554"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:40:48.382" endtime="20240402 18:40:50.554"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:40:33.649" endtime="20240402 18:40:50.555"></status>
+</kw>
+<kw name="Get Element Attribute" library="Web">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${TokenEditSrNoField}</arg>
+<arg>${Value}</arg>
+</arguments>
+<assign>
+<var>${TokenSerialNo}</var>
+</assign>
+<msg timestamp="20240402 18:40:50.602" level="INFO">${TokenSerialNo} = VOLA-00036360</msg>
+<status status="PASS" starttime="20240402 18:40:50.555" endtime="20240402 18:40:50.602"></status>
+</kw>
+<kw name="Get Token Activation Link And Add It To SurePass Auth App" library="AndroidResource">
+<kw name="Get Element Attribute" library="Web">
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<arguments>
+<arg>${TokenEditSrNoField}</arg>
+<arg>${Value}</arg>
+</arguments>
+<assign>
+<var>${TokenSerialNo}</var>
+</assign>
+<msg timestamp="20240402 18:40:50.625" level="INFO">${TokenSerialNo} = VOLA-00036360</msg>
+<status status="PASS" starttime="20240402 18:40:50.603" endtime="20240402 18:40:50.625"></status>
+</kw>
+<kw name="Click Element" library="Web">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${InstantActivationIcon}</arg>
+</arguments>
+<msg timestamp="20240402 18:40:50.626" level="INFO">Clicking element 'xpath://*[@name="ctl00$ContentPlaceHolder1$btnShowInstantActivation"]'.</msg>
+<status status="PASS" starttime="20240402 18:40:50.626" endtime="20240402 18:40:50.703"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Web">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${ActivationText}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:50.703" endtime="20240402 18:40:52.548"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${SleepDelay5s}</arg>
+</arguments>
+<msg timestamp="20240402 18:40:57.549" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240402 18:40:52.549" endtime="20240402 18:40:57.550"></status>
+</kw>
+<kw name="Get Text" library="Web">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ActivationText}</arg>
+</arguments>
+<assign>
+<var>${TokenActivationLink}</var>
+</assign>
+<msg timestamp="20240402 18:40:57.599" level="INFO">${TokenActivationLink} = https://mfa-alpha.surepassid.com/otp-push-ota-provision/HYDeXMeRx7-xbAhVn7Vz1-ajLj604761</msg>
+<status status="PASS" starttime="20240402 18:40:57.550" endtime="20240402 18:40:57.599"></status>
+</kw>
+<kw name="Get Text" library="Web">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${TokenID}</arg>
+</arguments>
+<assign>
+<var>${src_code}</var>
+</assign>
+<msg timestamp="20240402 18:40:57.624" level="INFO">${src_code} = </msg>
+<status status="PASS" starttime="20240402 18:40:57.599" endtime="20240402 18:40:57.624"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${src_code}</arg>
+</arguments>
+<msg timestamp="20240402 18:40:57.624" level="INFO">${src_code} = </msg>
+<status status="PASS" starttime="20240402 18:40:57.624" endtime="20240402 18:40:57.624"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${TokenActivationLink}</arg>
+</arguments>
+<msg timestamp="20240402 18:40:57.625" level="INFO">${TokenActivationLink} = https://mfa-alpha.surepassid.com/otp-push-ota-provision/HYDeXMeRx7-xbAhVn7Vz1-ajLj604761</msg>
+<status status="PASS" starttime="20240402 18:40:57.624" endtime="20240402 18:40:57.625"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${TokenActivationLink}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:57.625" endtime="20240402 18:40:57.625"></status>
+</kw>
+<kw name="Open Test Application" library="AndroidResource">
+<kw name="Open Application" library="Mobile">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>${AppiumURL}</arg>
+<arg>automationName=${ANDROID_AUTOMATION_NAME}</arg>
+<arg>platformName=${ANDROID_PLATFORM_NAME}</arg>
+<arg>deviceName=${AndroidDeviceName}</arg>
+<arg>appPackage=${AndroidSurePassPackageName}</arg>
+<arg>appActivity=${AndroidSurePassActivityName}</arg>
+<arg>noReset=true</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:40:57.626" endtime="20240402 18:41:07.678"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:40:57.625" endtime="20240402 18:41:07.678"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${SleepDelay2s}</arg>
+</arguments>
+<msg timestamp="20240402 18:41:09.679" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20240402 18:41:07.679" endtime="20240402 18:41:09.680"></status>
+</kw>
+<kw name="Open Browser With Activation Link" library="AndroidResource">
+<arguments>
+<arg>${TokenActivationLink}</arg>
+</arguments>
+<kw name="Run And Return Rc" library="OperatingSystem">
+<doc>Runs the given command in the system and returns the return code.</doc>
+<arguments>
+<arg>adb shell am start -a android.intent.action.VIEW -d ${ActivationLink}</arg>
+</arguments>
+<assign>
+<var>${rc}</var>
+</assign>
+<msg timestamp="20240402 18:41:09.692" level="INFO">Running command 'adb shell am start -a android.intent.action.VIEW -d https://mfa-alpha.surepassid.com/otp-push-ota-provision/HYDeXMeRx7-xbAhVn7Vz1-ajLj604761 2&gt;&amp;1'.</msg>
+<msg timestamp="20240402 18:41:12.826" level="INFO">${rc} = 0</msg>
+<status status="PASS" starttime="20240402 18:41:09.682" endtime="20240402 18:41:12.826"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>'${rc}'</arg>
+<arg>'0'</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:41:12.828" endtime="20240402 18:41:12.831"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:41:09.680" endtime="20240402 18:41:12.832"></status>
+</kw>
+<kw name="Press Enter Key" library="AndroidResource">
+<kw name="Run And Return Rc" library="OperatingSystem">
+<doc>Runs the given command in the system and returns the return code.</doc>
+<arguments>
+<arg>adb shell input keyevent 66</arg>
+</arguments>
+<assign>
+<var>${rc}</var>
+</assign>
+<msg timestamp="20240402 18:41:12.842" level="INFO">Running command 'adb shell input keyevent 66 2&gt;&amp;1'.</msg>
+<msg timestamp="20240402 18:41:14.069" level="INFO">${rc} = 0</msg>
+<status status="PASS" starttime="20240402 18:41:12.835" endtime="20240402 18:41:14.069"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>'${rc}'</arg>
+<arg>'0'</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:41:14.071" endtime="20240402 18:41:14.073"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:41:12.832" endtime="20240402 18:41:14.074"></status>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Mobile.Wait Until Page Contains Element</arg>
+<arg>${OpenWithSPAuthApp}</arg>
+</arguments>
+<assign>
+<var>${status}</var>
+</assign>
+<kw name="Wait Until Page Contains Element" library="Mobile">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${OpenWithSPAuthApp}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Mobile">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20240402 18:41:14.121" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+</msg>
+<status status="FAIL" starttime="20240402 18:41:14.101" endtime="20240402 18:41:14.122"></status>
+</kw>
+<msg timestamp="20240402 18:41:14.135" level="WARN">Keyword 'Mobile.Capture Page Screenshot' could not be run on failure: WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+</msg>
+<msg timestamp="20240402 18:41:14.136" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: 'POST /elements' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+</msg>
+<status status="FAIL" starttime="20240402 18:41:14.077" endtime="20240402 18:41:14.136"></status>
+</kw>
+<msg timestamp="20240402 18:41:14.136" level="INFO">${status} = False</msg>
+<status status="PASS" starttime="20240402 18:41:14.075" endtime="20240402 18:41:14.136"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${status}' == 'True'</arg>
+<arg>Select SurePass As Default On Browser</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:41:14.137" endtime="20240402 18:41:14.137"></status>
+</kw>
+<kw name="Open Test Application" library="AndroidResource">
+<kw name="Open Application" library="Mobile">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>${AppiumURL}</arg>
+<arg>automationName=${ANDROID_AUTOMATION_NAME}</arg>
+<arg>platformName=${ANDROID_PLATFORM_NAME}</arg>
+<arg>deviceName=${AndroidDeviceName}</arg>
+<arg>appPackage=${AndroidSurePassPackageName}</arg>
+<arg>appActivity=${AndroidSurePassActivityName}</arg>
+<arg>noReset=true</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:41:14.137" endtime="20240402 18:41:23.831"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:41:14.137" endtime="20240402 18:41:23.831"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Mobile">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${SurePassTokenValue}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:41:23.831" endtime="20240402 18:41:25.222"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:40:50.602" endtime="20240402 18:41:25.222"></status>
+</kw>
+<kw name="Open Test Application" library="AndroidResource">
+<kw name="Open Application" library="Mobile">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>${AppiumURL}</arg>
+<arg>automationName=${ANDROID_AUTOMATION_NAME}</arg>
+<arg>platformName=${ANDROID_PLATFORM_NAME}</arg>
+<arg>deviceName=${AndroidDeviceName}</arg>
+<arg>appPackage=${AndroidSurePassPackageName}</arg>
+<arg>appActivity=${AndroidSurePassActivityName}</arg>
+<arg>noReset=true</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:41:25.223" endtime="20240402 18:41:33.333"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:41:25.223" endtime="20240402 18:41:33.333"></status>
+</kw>
+<kw name="Edit SurePassToken Name" library="AndroidResource">
+<arguments>
+<arg>Tinker30</arg>
+</arguments>
+<kw name="Open Test Application" library="AndroidResource">
+<kw name="Open Application" library="Mobile">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>${AppiumURL}</arg>
+<arg>automationName=${ANDROID_AUTOMATION_NAME}</arg>
+<arg>platformName=${ANDROID_PLATFORM_NAME}</arg>
+<arg>deviceName=${AndroidDeviceName}</arg>
+<arg>appPackage=${AndroidSurePassPackageName}</arg>
+<arg>appActivity=${AndroidSurePassActivityName}</arg>
+<arg>noReset=true</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:41:33.335" endtime="20240402 18:41:41.515"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:41:33.335" endtime="20240402 18:41:41.515"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Mobile">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${SurePassTokenValue}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:41:41.515" endtime="20240402 18:41:42.937"></status>
+</kw>
+<kw name="Long Press" library="Mobile">
+<doc>Long press the element with optional duration</doc>
+<arguments>
+<arg>${SurePassTokenValue}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:41:42.938" endtime="20240402 18:41:46.128"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Mobile">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${EditIcon}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:41:46.129" endtime="20240402 18:41:46.309"></status>
+</kw>
+<kw name="Click Element" library="Mobile">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${EditIcon}</arg>
+</arguments>
+<msg timestamp="20240402 18:41:46.327" level="INFO">Clicking element '//android.widget.ImageButton[@resource-id="com.surepassid.otp.authenticator:id/edit_account_name"]'.</msg>
+<status status="PASS" starttime="20240402 18:41:46.309" endtime="20240402 18:41:46.527"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Mobile">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${EditNameBox}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:41:46.527" endtime="20240402 18:41:47.358"></status>
+</kw>
+<kw name="Input Text" library="Mobile">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${EditNameBox}</arg>
+<arg>${NewName}</arg>
+</arguments>
+<msg timestamp="20240402 18:41:47.394" level="INFO">Typing text 'Tinker30' into text field '//android.widget.EditText[@resource-id="com.surepassid.otp.authenticator:id/account_name_edit"]'</msg>
+<status status="PASS" starttime="20240402 18:41:47.359" endtime="20240402 18:41:48.748"></status>
+</kw>
+<kw name="Click Element" library="Mobile">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${SaveNewNameBtn}</arg>
+</arguments>
+<msg timestamp="20240402 18:41:48.784" level="INFO">Clicking element '//android.widget.Button[@resource-id="com.surepassid.otp.authenticator:id/account_name_save_button"]'.</msg>
+<status status="PASS" starttime="20240402 18:41:48.748" endtime="20240402 18:41:49.524"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${SleepDelay2s}</arg>
+</arguments>
+<msg timestamp="20240402 18:41:51.527" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20240402 18:41:49.526" endtime="20240402 18:41:51.528"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:41:33.334" endtime="20240402 18:41:51.528"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Mobile">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${TokenNameText}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:41:51.529" endtime="20240402 18:41:51.717"></status>
+</kw>
+<kw name="Get Text" library="Mobile">
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<arguments>
+<arg>${TokenNameText}</arg>
+</arguments>
+<assign>
+<var>${updatedName}</var>
+</assign>
+<msg timestamp="20240402 18:41:51.864" level="INFO">Element '//android.widget.TextView[@resource-id="com.surepassid.otp.authenticator:id/account_name"]' text is 'Tinker30' </msg>
+<msg timestamp="20240402 18:41:51.864" level="INFO">${updatedName} = Tinker30</msg>
+<status status="PASS" starttime="20240402 18:41:51.718" endtime="20240402 18:41:51.864"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${updatedName}</arg>
+<arg>Tinker30</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:41:51.864" endtime="20240402 18:41:51.864"></status>
+</kw>
+<kw name="Run Keywords" library="BuiltIn" type="teardown">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>Delete Token If Existing</arg>
+<arg>${TokenSerialNo}</arg>
+<arg>AND</arg>
+<arg>Delete Token If Existing</arg>
+<arg>Tinker30</arg>
+</arguments>
+<kw name="Delete Token If Existing" library="TokenPageResource">
+<arguments>
+<arg>${TokenSerialNo}</arg>
+</arguments>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${TokenName}</arg>
+</arguments>
+<msg timestamp="20240402 18:41:51.866" level="INFO">${TokenName} = VOLA-00036360</msg>
+<status status="PASS" starttime="20240402 18:41:51.865" endtime="20240402 18:41:51.866"></status>
+</kw>
+<kw name="Go To Token Page And Search Token" library="TokenPageResource">
+<arguments>
+<arg>${TokenName}</arg>
+</arguments>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${SleepDelay5s}</arg>
+</arguments>
+<msg timestamp="20240402 18:41:56.867" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240402 18:41:51.866" endtime="20240402 18:41:56.867"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Web">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${TokensTab}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:41:56.868" endtime="20240402 18:41:56.925"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="Web">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${TokensTab}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:41:56.926" endtime="20240402 18:41:56.947"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>1s</arg>
+<arg>Web.Mouse Over</arg>
+<arg>${TokensTab}</arg>
+</arguments>
+<kw name="Mouse Over" library="Web">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${TokensTab}</arg>
+</arguments>
+<msg timestamp="20240402 18:41:56.948" level="INFO">Simulating Mouse Over on element 'xpath://*[@id="tab_Tokenslink"]'.</msg>
+<status status="PASS" starttime="20240402 18:41:56.948" endtime="20240402 18:41:57.236"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:41:56.947" endtime="20240402 18:41:57.237"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>1s</arg>
+<arg>Web.Click Element</arg>
+<arg>${TokensTab}</arg>
+</arguments>
+<kw name="Click Element" library="Web">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${TokensTab}</arg>
+</arguments>
+<msg timestamp="20240402 18:41:57.240" level="INFO">Clicking element 'xpath://*[@id="tab_Tokenslink"]'.</msg>
+<status status="PASS" starttime="20240402 18:41:57.239" endtime="20240402 18:41:59.088"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:41:57.238" endtime="20240402 18:41:59.088"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Web">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SerialNoFilterDropdown}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:41:59.089" endtime="20240402 18:41:59.119"></status>
+</kw>
+<kw name="Select From List By Value" library="Web">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>${SerialNoFilterDropdown}</arg>
+<arg>${DropdownType}</arg>
+</arguments>
+<msg timestamp="20240402 18:41:59.119" level="INFO">Selecting options from selection list 'xpath://*[@id="ctl00_ContentPlaceHolder1_ddlSerialNumberFilterComparator"]' by value 3.</msg>
+<status status="PASS" starttime="20240402 18:41:59.119" endtime="20240402 18:41:59.157"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Web">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SrNoFilterSearchField}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:41:59.157" endtime="20240402 18:41:59.183"></status>
+</kw>
+<kw name="Input Text" library="Web">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${SrNoFilterSearchField}</arg>
+<arg>${TokenName}</arg>
+</arguments>
+<msg timestamp="20240402 18:41:59.183" level="INFO">Typing text 'VOLA-00036360' into text field 'xpath://*[@id="ctl00_ContentPlaceHolder1_tbxSerialNumber"]'.</msg>
+<status status="PASS" starttime="20240402 18:41:59.183" endtime="20240402 18:41:59.340"></status>
+</kw>
+<kw name="Click Element" library="Web">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SrNoFilterSearchIcon}</arg>
+</arguments>
+<msg timestamp="20240402 18:41:59.341" level="INFO">Clicking element 'xpath://*[@id="ctl00_ContentPlaceHolder1_btnFindSerial"]'.</msg>
+<status status="PASS" starttime="20240402 18:41:59.341" endtime="20240402 18:41:59.397"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${SleepDelay10s}</arg>
+</arguments>
+<msg timestamp="20240402 18:42:09.398" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20240402 18:41:59.397" endtime="20240402 18:42:09.398"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:41:51.866" endtime="20240402 18:42:09.398"></status>
+</kw>
+<kw name="Get Element Count" library="Web">
+<doc>Returns the number of elements matching ``locator``.</doc>
+<arguments>
+<arg>xpath://*[text()= "${TokenName}"]/parent::div//parent::div//*[@src="images/icons-mini/trash_black_white.png"]</arg>
+</arguments>
+<assign>
+<var>${Count}</var>
+</assign>
+<msg timestamp="20240402 18:42:09.442" level="INFO">${Count} = 1</msg>
+<status status="PASS" starttime="20240402 18:42:09.399" endtime="20240402 18:42:09.442"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${Count} &gt; 0</arg>
+<arg>Delete Tokens</arg>
+<arg>${Count}</arg>
+</arguments>
+<kw name="Delete Tokens" library="TokenPageResource">
+<arguments>
+<arg>${Count}</arg>
+</arguments>
+<kw name="${i} IN RANGE [ ${Count} ]" type="for">
+<kw name="${i} = 0" type="foritem">
+<kw name="Wait Until Element Is Visible" library="Web">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath://*[text()= "${TokenName}"]/parent::div//parent::div//*[@src="images/icons-mini/trash_black_white.png"]</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:42:09.445" endtime="20240402 18:42:09.468"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>1s</arg>
+<arg>Web.Click Element</arg>
+<arg>xpath://*[text()= "${TokenName}"]/parent::div//parent::div//*[@src="images/icons-mini/trash_black_white.png"]</arg>
+</arguments>
+<kw name="Click Element" library="Web">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[text()= "${TokenName}"]/parent::div//parent::div//*[@src="images/icons-mini/trash_black_white.png"]</arg>
+</arguments>
+<msg timestamp="20240402 18:42:09.470" level="INFO">Clicking element 'xpath://*[text()= "VOLA-00036360"]/parent::div//parent::div//*[@src="images/icons-mini/trash_black_white.png"]'.</msg>
+<status status="PASS" starttime="20240402 18:42:09.469" endtime="20240402 18:42:09.512"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:42:09.469" endtime="20240402 18:42:09.512"></status>
+</kw>
+<kw name="Click on Delete button" library="TokenPageResource">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${SleepDelay5s}</arg>
+</arguments>
+<msg timestamp="20240402 18:42:14.514" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240402 18:42:09.513" endtime="20240402 18:42:14.514"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Web">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${PopupDeletebutton}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:42:14.515" endtime="20240402 18:42:14.571"></status>
+</kw>
+<kw name="Click Element" library="Web">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${PopupDeletebutton}</arg>
+</arguments>
+<msg timestamp="20240402 18:42:14.571" level="INFO">Clicking element 'xpath://*[@id="ctl00_ContentPlaceHolder1_Dialog1_ctl01_btnConfirm"]'.</msg>
+<status status="PASS" starttime="20240402 18:42:14.571" endtime="20240402 18:42:14.622"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:42:09.512" endtime="20240402 18:42:14.623"></status>
+</kw>
+<kw name="Verify Delete Token Success Message receive or not" library="TokenPageResource">
+<kw name="Wait Until Element Is Visible" library="Web">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${ToastPopUpMsg}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:42:14.624" endtime="20240402 18:42:15.971"></status>
+</kw>
+<kw name="Page Should Contain" library="Web">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Token(s) has been deleted successfully.</arg>
+</arguments>
+<msg timestamp="20240402 18:42:15.986" level="INFO">Current page contains text 'Token(s) has been deleted successfully.'.</msg>
+<status status="PASS" starttime="20240402 18:42:15.971" endtime="20240402 18:42:15.986"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:42:14.623" endtime="20240402 18:42:15.986"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:42:09.444" endtime="20240402 18:42:15.986"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:42:09.444" endtime="20240402 18:42:15.986"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:42:09.443" endtime="20240402 18:42:15.986"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:42:09.443" endtime="20240402 18:42:15.986"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:41:51.865" endtime="20240402 18:42:15.987"></status>
+</kw>
+<kw name="Delete Token If Existing" library="TokenPageResource">
+<arguments>
+<arg>Tinker30</arg>
+</arguments>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${TokenName}</arg>
+</arguments>
+<msg timestamp="20240402 18:42:15.988" level="INFO">${TokenName} = Tinker30</msg>
+<status status="PASS" starttime="20240402 18:42:15.987" endtime="20240402 18:42:15.988"></status>
+</kw>
+<kw name="Go To Token Page And Search Token" library="TokenPageResource">
+<arguments>
+<arg>${TokenName}</arg>
+</arguments>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${SleepDelay5s}</arg>
+</arguments>
+<msg timestamp="20240402 18:42:20.990" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240402 18:42:15.989" endtime="20240402 18:42:20.990"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Web">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${TokensTab}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:42:20.991" endtime="20240402 18:42:21.039"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="Web">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${TokensTab}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:42:21.040" endtime="20240402 18:42:21.061"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>1s</arg>
+<arg>Web.Mouse Over</arg>
+<arg>${TokensTab}</arg>
+</arguments>
+<kw name="Mouse Over" library="Web">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${TokensTab}</arg>
+</arguments>
+<msg timestamp="20240402 18:42:21.063" level="INFO">Simulating Mouse Over on element 'xpath://*[@id="tab_Tokenslink"]'.</msg>
+<status status="PASS" starttime="20240402 18:42:21.062" endtime="20240402 18:42:21.332"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:42:21.062" endtime="20240402 18:42:21.333"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5x</arg>
+<arg>1s</arg>
+<arg>Web.Click Element</arg>
+<arg>${TokensTab}</arg>
+</arguments>
+<kw name="Click Element" library="Web">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${TokensTab}</arg>
+</arguments>
+<msg timestamp="20240402 18:42:21.337" level="INFO">Clicking element 'xpath://*[@id="tab_Tokenslink"]'.</msg>
+<status status="PASS" starttime="20240402 18:42:21.336" endtime="20240402 18:42:22.989"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:42:21.334" endtime="20240402 18:42:22.989"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Web">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SerialNoFilterDropdown}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:42:22.989" endtime="20240402 18:42:23.017"></status>
+</kw>
+<kw name="Select From List By Value" library="Web">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>${SerialNoFilterDropdown}</arg>
+<arg>${DropdownType}</arg>
+</arguments>
+<msg timestamp="20240402 18:42:23.018" level="INFO">Selecting options from selection list 'xpath://*[@id="ctl00_ContentPlaceHolder1_ddlSerialNumberFilterComparator"]' by value 3.</msg>
+<status status="PASS" starttime="20240402 18:42:23.018" endtime="20240402 18:42:23.066"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Web">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SrNoFilterSearchField}</arg>
+<arg>${StandardTimeout}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:42:23.067" endtime="20240402 18:42:23.091"></status>
+</kw>
+<kw name="Input Text" library="Web">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${SrNoFilterSearchField}</arg>
+<arg>${TokenName}</arg>
+</arguments>
+<msg timestamp="20240402 18:42:23.092" level="INFO">Typing text 'Tinker30' into text field 'xpath://*[@id="ctl00_ContentPlaceHolder1_tbxSerialNumber"]'.</msg>
+<status status="PASS" starttime="20240402 18:42:23.092" endtime="20240402 18:42:23.199"></status>
+</kw>
+<kw name="Click Element" library="Web">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SrNoFilterSearchIcon}</arg>
+</arguments>
+<msg timestamp="20240402 18:42:23.200" level="INFO">Clicking element 'xpath://*[@id="ctl00_ContentPlaceHolder1_btnFindSerial"]'.</msg>
+<status status="PASS" starttime="20240402 18:42:23.200" endtime="20240402 18:42:23.253"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${SleepDelay10s}</arg>
+</arguments>
+<msg timestamp="20240402 18:42:33.254" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20240402 18:42:23.253" endtime="20240402 18:42:33.254"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:42:15.988" endtime="20240402 18:42:33.255"></status>
+</kw>
+<kw name="Get Element Count" library="Web">
+<doc>Returns the number of elements matching ``locator``.</doc>
+<arguments>
+<arg>xpath://*[text()= "${TokenName}"]/parent::div//parent::div//*[@src="images/icons-mini/trash_black_white.png"]</arg>
+</arguments>
+<assign>
+<var>${Count}</var>
+</assign>
+<msg timestamp="20240402 18:42:33.302" level="INFO">${Count} = 0</msg>
+<status status="PASS" starttime="20240402 18:42:33.255" endtime="20240402 18:42:33.302"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${Count} &gt; 0</arg>
+<arg>Delete Tokens</arg>
+<arg>${Count}</arg>
+</arguments>
+<status status="PASS" starttime="20240402 18:42:33.303" endtime="20240402 18:42:33.304"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:42:15.987" endtime="20240402 18:42:33.304"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:41:51.865" endtime="20240402 18:42:33.304"></status>
+</kw>
+<tags>
+<tag>Android_Auth_030</tag>
+<tag>SurePassID_M1</tag>
+<tag>SurePassId_Mobile</tag>
+</tags>
+<status status="PASS" starttime="20240402 18:40:03.766" endtime="20240402 18:42:33.305" critical="yes"></status>
+</test>
+<kw name="Close All Browsers" library="Web" type="teardown">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240402 18:42:33.308" endtime="20240402 18:42:33.390"></status>
+</kw>
+<status status="PASS" starttime="20240402 18:39:34.743" endtime="20240402 18:42:33.390"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">Android_Auth_030</stat>
+<stat pass="1" fail="0">SurePassID_M1</stat>
+<stat pass="1" fail="0">SurePassId_Mobile</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="AndroidAppTest">AndroidAppTest</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240402 18:41:14.135" level="WARN">Keyword 'Mobile.Capture Page Screenshot' could not be run on failure: WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+</msg>
+</errors>
+</robot>

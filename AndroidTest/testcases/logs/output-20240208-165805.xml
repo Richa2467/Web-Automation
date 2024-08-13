@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.8.10 on linux)" generated="2024-02-08T16:58:05.749183" rpa="false" schemaversion="5">
+<suite id="s1" name="AndroidAppTest" source="/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/testcases/AndroidAppTest.robot">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="Open SurePass On Browser" owner="LoginPageResource">
+<kw name="Open Browser" owner="Web">
+<msg time="2024-02-08T16:58:06.298901" level="INFO">Opening browser 'Chrome' to base url 'https://mfa-alpha.surepassid.com/default.aspx'.</msg>
+<arg>url=${url}</arg>
+<arg>browser=${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-08T16:58:06.298116" elapsed="2.963316"/>
+</kw>
+<kw name="Maximize Browser Window" owner="Web">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-08T16:58:09.262863" elapsed="0.103750"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="Web">
+<arg>${expectedElement}</arg>
+<arg>${StandardTimeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-02-08T16:58:09.367042" elapsed="0.026153"/>
+</kw>
+<status status="PASS" start="2024-02-08T16:58:06.297379" elapsed="3.096059"/>
+</kw>
+<kw name="Submit 2FA Page Using Email OTP" owner="LoginPageResource">
+<kw name="Submit First Login Page" owner="LoginPageResource">
+<kw name="Wait Until Element Is Enabled" owner="Web">
+<arg>${AccountNameLocator}</arg>
+<arg>${StandardTimeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-02-08T16:58:09.395647" elapsed="0.025555"/>
+</kw>
+<kw name="Input Text" owner="Web">
+<msg time="2024-02-08T16:58:09.422047" level="INFO">Typing text 'volansys.com' into text field 'css:[name='tbxDomain_Name']'.</msg>
+<arg>${AccountNameLocator}</arg>
+<arg>${AccountName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-08T16:58:09.421646" elapsed="0.085937"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="Web">
+<arg>${UserNameLocator}</arg>
+<arg>${StandardTimeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-02-08T16:58:09.508058" elapsed="0.025825"/>
+</kw>
+<kw name="Input Text" owner="Web">
+<msg time="2024-02-08T16:58:09.534712" level="INFO">Typing text 'VolQa1' into text field 'css:[name='tbxUser_Name']'.</msg>
+<arg>${UserNameLocator}</arg>
+<arg>${UserName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-08T16:58:09.534320" elapsed="0.070251"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="Web">
+<arg>${PasswordLocator}</arg>
+<arg>${StandardTimeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-02-08T16:58:09.605016" elapsed="0.020706"/>
+</kw>
+<kw name="Input Text" owner="Web">
+<msg time="2024-02-08T16:58:09.626542" level="INFO">Typing text 'Volansys@123' into text field 'css:[name='tbxPassword']'.</msg>
+<arg>${PasswordLocator}</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-08T16:58:09.626155" elapsed="0.074148"/>
+</kw>
+<kw name="Click Element" owner="Web">
+<msg time="2024-02-08T16:58:09.701211" level="INFO">Clicking element 'css:[id='btnLogin']'.</msg>
+<arg>${SignInButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-08T16:58:09.700829" elapsed="0.378399"/>
+</kw>
+<status status="PASS" start="2024-02-08T16:58:09.395157" elapsed="0.684268"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="Web">
+<kw name="Capture Page Screenshot" owner="Web">
+<msg time="2024-02-08T16:58:17.273970" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.139)
+Stacktrace:
+#0 0x55fe40f35d93 &lt;unknown&gt;
+#1 0x55fe40c19337 &lt;unknown&gt;
+#2 0x55fe40befa18 &lt;unknown&gt;
+#3 0x55fe40c8fead &lt;unknown&gt;
+#4 0x55fe40ca5a95 &lt;unknown&gt;
+#5 0x55fe40c871e3 &lt;unknown&gt;
+#6 0x55fe40c57135 &lt;unknown&gt;
+#7 0x55fe40c5813e &lt;unknown&gt;
+#8 0x55fe40ef9e4b &lt;unknown&gt;
+#9 0x55fe40efddfa &lt;unknown&gt;
+#10 0x55fe40ee66d5 &lt;unknown&gt;
+#11 0x55fe40efea6f &lt;unknown&gt;
+#12 0x55fe40eca69f &lt;unknown&gt;
+#13 0x55fe40f23098 &lt;unknown&gt;
+#14 0x55fe40f23262 &lt;unknown&gt;
+#15 0x55fe40f34f34 &lt;unknown&gt;
+#16 0x7f2175ea3609 start_thread
+</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="FAIL" start="2024-02-08T16:58:17.253160" elapsed="0.022739">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.139)
+Stacktrace:
+#0 0x55fe40f35d93 &lt;unknown&gt;
+#1 0x55fe40c19337 &lt;unknown&gt;
+#2 0x55fe40befa18 &lt;unknown&gt;
+#3 0x55fe40c8fead &lt;unknown&gt;
+#4 0x55fe40ca5a95 &lt;unknown&gt;
+#5 0x55fe40c871e3 &lt;unknown&gt;
+#6 0x55fe40c57135 &lt;unknown&gt;
+#7 0x55fe40c5813e &lt;unknown&gt;
+#8 0x55fe40ef9e4b &lt;unknown&gt;
+#9 0x55fe40efddfa &lt;unknown&gt;
+#10 0x55fe40ee66d5 &lt;unknown&gt;
+#11 0x55fe40efea6f &lt;unknown&gt;
+#12 0x55fe40eca69f &lt;unknown&gt;
+#13 0x55fe40f23098 &lt;unknown&gt;
+#14 0x55fe40f23262 &lt;unknown&gt;
+#15 0x55fe40f34f34 &lt;unknown&gt;
+#16 0x7f2175ea3609 start_thread
+</status>
+</kw>
+<msg time="2024-02-08T16:58:17.276071" level="WARN">Keyword 'Web.Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.139)
+Stacktrace:
+#0 0x55fe40f35d93 &lt;unknown&gt;
+#1 0x55fe40c19337 &lt;unknown&gt;
+#2 0x55fe40befa18 &lt;unknown&gt;
+#3 0x55fe40c8fead &lt;unknown&gt;
+#4 0x55fe40ca5a95 &lt;unknown&gt;
+#5 0x55fe40c871e3 &lt;unknown&gt;
+#6 0x55fe40c57135 &lt;unknown&gt;
+#7 0x55fe40c5813e &lt;unknown&gt;
+#8 0x55fe40ef9e4b &lt;unknown&gt;
+#9 0x55fe40efddfa &lt;unknown&gt;
+#10 0x55fe40ee66d5 &lt;unknown&gt;
+#11 0x55fe40efea6f &lt;unknown&gt;
+#12 0x55fe40eca69f &lt;unknown&gt;
+#13 0x55fe40f23098 &lt;unknown&gt;
+#14 0x55fe40f23262 &lt;unknown&gt;
+#15 0x55fe40f34f34 &lt;unknown&gt;
+#16 0x7f2175ea3609 start_thread
+</msg>
+<msg time="2024-02-08T16:58:17.276432" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.139)
+Stacktrace:
+#0 0x55fe40f35d93 &lt;unknown&gt;
+#1 0x55fe40c19337 &lt;unknown&gt;
+#2 0x55fe40befa18 &lt;unknown&gt;
+#3 0x55fe40c8fead &lt;unknown&gt;
+#4 0x55fe40ca5a95 &lt;unknown&gt;
+#5 0x55fe40c871e3 &lt;unknown&gt;
+#6 0x55fe40c57135 &lt;unknown&gt;
+#7 0x55fe40c5813e &lt;unknown&gt;
+#8 0x55fe40ef9e4b &lt;unknown&gt;
+#9 0x55fe40efddfa &lt;unknown&gt;
+#10 0x55fe40ee66d5 &lt;unknown&gt;
+#11 0x55fe40efea6f &lt;unknown&gt;
+#12 0x55fe40eca69f &lt;unknown&gt;
+#13 0x55fe40f23098 &lt;unknown&gt;
+#14 0x55fe40f23262 &lt;unknown&gt;
+#15 0x55fe40f34f34 &lt;unknown&gt;
+#16 0x7f2175ea3609 start_thread
+</msg>
+<arg>${OtpTextBox}</arg>
+<arg>${StandardTimeout}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="FAIL" start="2024-02-08T16:58:10.079868" elapsed="7.196898">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.139)
+Stacktrace:
+#0 0x55fe40f35d93 &lt;unknown&gt;
+#1 0x55fe40c19337 &lt;unknown&gt;
+#2 0x55fe40befa18 &lt;unknown&gt;
+#3 0x55fe40c8fead &lt;unknown&gt;
+#4 0x55fe40ca5a95 &lt;unknown&gt;
+#5 0x55fe40c871e3 &lt;unknown&gt;
+#6 0x55fe40c57135 &lt;unknown&gt;
+#7 0x55fe40c5813e &lt;unknown&gt;
+#8 0x55fe40ef9e4b &lt;unknown&gt;
+#9 0x55fe40efddfa &lt;unknown&gt;
+#10 0x55fe40ee66d5 &lt;unknown&gt;
+#11 0x55fe40efea6f &lt;unknown&gt;
+#12 0x55fe40eca69f &lt;unknown&gt;
+#13 0x55fe40f23098 &lt;unknown&gt;
+#14 0x55fe40f23262 &lt;unknown&gt;
+#15 0x55fe40f34f34 &lt;unknown&gt;
+#16 0x7f2175ea3609 start_thread
+</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="Web">
+<arg>${EmailIcon}</arg>
+<arg>${StandardTimeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-02-08T16:58:17.277345" elapsed="0.000079"/>
+</kw>
+<kw name="Click Element" owner="Web">
+<arg>${EmailIcon}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-02-08T16:58:17.277828" elapsed="0.000085"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>${SleepDelay5s}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-02-08T16:58:17.278340" elapsed="0.000089"/>
+</kw>
+<kw name="Open Mailbox" owner="ImapLibrary2">
+<arg>host=${GmailHost}</arg>
+<arg>user=${GmailId}</arg>
+<arg>password=${GmailPassword}</arg>
+<doc>Open IMAP email client session to given ``host`` with given ``user`` and ``password``.</doc>
+<status status="NOT RUN" start="2024-02-08T16:58:17.279280" elapsed="0.000094"/>
+</kw>
+<kw name="Wait For Email" owner="ImapLibrary2">
+<var>${LATEST}</var>
+<arg>sender=${MailSenderId}</arg>
+<arg>status=UNSEEN</arg>
+<arg>timeout=300</arg>
+<doc>Wait for email message to arrived base on any given filter criteria.
+Returns email index of the latest email message received.</doc>
+<status status="NOT RUN" start="2024-02-08T16:58:17.279785" elapsed="0.000154"/>
+</kw>
+<kw name="Get Email Body" owner="ImapLibrary2">
+<var>${HTML}</var>
+<arg>${LATEST}</arg>
+<doc>Returns the decoded email body on multipart email message,
+otherwise returns the body text.</doc>
+<status status="NOT RUN" start="2024-02-08T16:58:17.280591" elapsed="0.000095"/>
+</kw>
+<kw name="Get Regexp Matches" owner="String">
+<var>${otpText}</var>
+<arg>${HTML}</arg>
+<arg>\\d{${OtpLength}}</arg>
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<status status="NOT RUN" start="2024-02-08T16:58:17.281091" elapsed="0.000066"/>
+</kw>
+<kw name="Delete Email" owner="ImapLibrary2">
+<arg>${LATEST}</arg>
+<doc>Delete email on given ``email_index``.</doc>
+<status status="NOT RUN" start="2024-02-08T16:58:17.281661" elapsed="0.000084"/>
+</kw>
+<kw name="Input Text" owner="Web">
+<arg>${OtpTextBox}</arg>
+<arg>${otpText}[0]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-02-08T16:58:17.282154" elapsed="0.000115"/>
+</kw>
+<kw name="Click Element" owner="Web">
+<arg>${VerifyOtpButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-02-08T16:58:17.282734" elapsed="0.000073"/>
+</kw>
+<kw name="Select the Checkbox if Terms of Use Page is visible" owner="LoginPageResource">
+<status status="NOT RUN" start="2024-02-08T16:58:17.283283" elapsed="0.000071"/>
+</kw>
+<arg>6</arg>
+<status status="FAIL" start="2024-02-08T16:58:09.394183" elapsed="7.889400">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.139)
+Stacktrace:
+#0 0x55fe40f35d93 &lt;unknown&gt;
+#1 0x55fe40c19337 &lt;unknown&gt;
+#2 0x55fe40befa18 &lt;unknown&gt;
+#3 0x55fe40c8fead &lt;unknown&gt;
+#4 0x55fe40ca5a95 &lt;unknown&gt;
+#5 0x55fe40c871e3 &lt;unknown&gt;
+#6 0x55fe40c57135 &lt;unknown&gt;
+#7 0x55fe40c5813e &lt;unknown&gt;
+#8 0x55fe40ef9e4b &lt;unknown&gt;
+#9 0x55fe40efddfa &lt;unknown&gt;
+#10 0x55fe40ee66d5 &lt;unknown&gt;
+#11 0x55fe40efea6f &lt;unknown&gt;
+#12 0x55fe40eca69f &lt;unknown&gt;
+#13 0x55fe40f23098 &lt;unknown&gt;
+#14 0x55fe40f23262 &lt;unknown&gt;
+#15 0x55fe40f34f34 &lt;unknown&gt;
+#16 0x7f2175ea3609 start_thread
+</status>
+</kw>
+<arg>Open SurePass On Browser</arg>
+<arg>AND</arg>
+<arg>Submit 2FA Page Using Email OTP</arg>
+<arg>6</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="FAIL" start="2024-02-08T16:58:06.296610" elapsed="10.987142">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.139)
+Stacktrace:
+#0 0x55fe40f35d93 &lt;unknown&gt;
+#1 0x55fe40c19337 &lt;unknown&gt;
+#2 0x55fe40befa18 &lt;unknown&gt;
+#3 0x55fe40c8fead &lt;unknown&gt;
+#4 0x55fe40ca5a95 &lt;unknown&gt;
+#5 0x55fe40c871e3 &lt;unknown&gt;
+#6 0x55fe40c57135 &lt;unknown&gt;
+#7 0x55fe40c5813e &lt;unknown&gt;
+#8 0x55fe40ef9e4b &lt;unknown&gt;
+#9 0x55fe40efddfa &lt;unknown&gt;
+#10 0x55fe40ee66d5 &lt;unknown&gt;
+#11 0x55fe40efea6f &lt;unknown&gt;
+#12 0x55fe40eca69f &lt;unknown&gt;
+#13 0x55fe40f23098 &lt;unknown&gt;
+#14 0x55fe40f23262 &lt;unknown&gt;
+#15 0x55fe40f34f34 &lt;unknown&gt;
+#16 0x7f2175ea3609 start_thread
+</status>
+</kw>
+<test id="s1-t1" name="Verify User is able to add the first token and recieve henceforth notifications after allowing the notifications permission." line="13">
+<tag>Android_Auth_007</tag>
+<tag>SurePassID_M1</tag>
+<tag>SurePassId_Mobile</tag>
+<status status="FAIL" start="2024-02-08T16:58:17.284005" elapsed="0.001034">Parent suite setup failed:
+NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.139)
+Stacktrace:
+#0 0x55fe40f35d93 &lt;unknown&gt;
+#1 0x55fe40c19337 &lt;unknown&gt;
+#2 0x55fe40befa18 &lt;unknown&gt;
+#3 0x55fe40c8fead &lt;unknown&gt;
+#4 0x55fe40ca5a95 &lt;unknown&gt;
+#5 0x55fe40c871e3 &lt;unknown&gt;
+#6 0x55fe40c57135 &lt;unknown&gt;
+#7 0x55fe40c5813e &lt;unknown&gt;
+#8 0x55fe40ef9e4b &lt;unknown&gt;
+#9 0x55fe40efddfa &lt;unknown&gt;
+#10 0x55fe40ee66d5 &lt;unknown&gt;
+#11 0x55fe40efea6f &lt;unknown&gt;
+#12 0x55fe40eca69f &lt;unknown&gt;
+#13 0x55fe40f23098 &lt;unknown&gt;
+#14 0x55fe40f23262 &lt;unknown&gt;
+#15 0x55fe40f34f34 &lt;unknown&gt;
+#16 0x7f2175ea3609 start_thread
+</status>
+</test>
+<kw name="Close All Browsers" owner="Web" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-02-08T16:58:17.286351" elapsed="0.155506"/>
+</kw>
+<status status="FAIL" start="2024-02-08T16:58:05.750091" elapsed="11.691929">Suite setup failed:
+NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.139)
+Stacktrace:
+#0 0x55fe40f35d93 &lt;unknown&gt;
+#1 0x55fe40c19337 &lt;unknown&gt;
+#2 0x55fe40befa18 &lt;unknown&gt;
+#3 0x55fe40c8fead &lt;unknown&gt;
+#4 0x55fe40ca5a95 &lt;unknown&gt;
+#5 0x55fe40c871e3 &lt;unknown&gt;
+#6 0x55fe40c57135 &lt;unknown&gt;
+#7 0x55fe40c5813e &lt;unknown&gt;
+#8 0x55fe40ef9e4b &lt;unknown&gt;
+#9 0x55fe40efddfa &lt;unknown&gt;
+#10 0x55fe40ee66d5 &lt;unknown&gt;
+#11 0x55fe40efea6f &lt;unknown&gt;
+#12 0x55fe40eca69f &lt;unknown&gt;
+#13 0x55fe40f23098 &lt;unknown&gt;
+#14 0x55fe40f23262 &lt;unknown&gt;
+#15 0x55fe40f34f34 &lt;unknown&gt;
+#16 0x7f2175ea3609 start_thread
+</status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Android_Auth_007</stat>
+<stat pass="0" fail="1" skip="0">SurePassID_M1</stat>
+<stat pass="0" fail="1" skip="0">SurePassId_Mobile</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="AndroidAppTest">AndroidAppTest</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-02-08T16:58:05.775334" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/LoginPageResource.robot' on line 155: The 'RETURN' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-08T16:58:05.885243" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/LoginPageResource.robot' on line 11: Importing library 'ApplicationLibrary.DesktopLibrary' failed: ModuleNotFoundError: No module named 'Zoomba'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /home/richatyagi/PycharmProjects/pythonProject/AndroidTest/testcases
+  /home/richatyagi/PycharmProjects/pythonProject/AndroidTest/testcases
+  /home/richatyagi/PycharmProjects/pythonProject/.venv/lib/python3.8/site-packages
+  /usr/lib/python38.zip
+  /usr/lib/python3.8
+  /usr/lib/python3.8/lib-dynload</msg>
+<msg time="2024-02-08T16:58:05.992150" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/UsersPageResource.robot' on line 567: The 'RETURN' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-08T16:58:05.992363" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/UsersPageResource.robot' on line 582: The 'RETURN' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-08T16:58:05.996244" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/UsersPageResource.robot' on line 902: The 'RETURN' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-08T16:58:05.996437" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/UsersPageResource.robot' on line 913: The 'RETURN' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-08T16:58:05.996591" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/UsersPageResource.robot' on line 923: The 'RETURN' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-08T16:58:05.996707" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/UsersPageResource.robot' on line 929: The 'RETURN' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-08T16:58:06.022711" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/TokenPageResource.robot' on line 205: The 'RETURN' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-08T16:58:06.045819" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/locators/TokenGroupLocator.robot' on line 2: Resource file '../Labels/TokenGroupLabel.robot' does not exist.</msg>
+<msg time="2024-02-08T16:58:06.046089" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/locators/TokenGroupLocator.robot' on line 3: Resource file '../Labels/LoginPageLabel.robot' does not exist.</msg>
+<msg time="2024-02-08T16:58:06.047635" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/TokenPageResource.robot' on line 11: Resource file '../Resources/AndroidResource.robot' does not exist.</msg>
+<msg time="2024-02-08T16:58:06.058137" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/AddNewSoftTokenResource.robot' on line 50: The 'RETURN' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-08T16:58:06.058328" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/AddNewSoftTokenResource.robot' on line 56: The 'RETURN' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-08T16:58:06.077887" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/labels/CustomizeEmailMsgLabel.robot' on line 1: Singular section headers like '*** Variable ***' are deprecated. Use plural format like '*** Variables ***' instead.</msg>
+<msg time="2024-02-08T16:58:06.090641" level="WARN">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/resources/AndroidResource.robot' on line 258: The 'RETURN' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-08T16:58:06.120037" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/locators/TokenGroupLocator.robot' on line 39: Setting variable '${DeleteCheckBox}' failed: Variable '${DescriptionText}' not found.</msg>
+<msg time="2024-02-08T16:58:06.132844" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/locators/TokenGroupLocator.robot' on line 27: Setting variable '${DeleteLinkToken}' failed: Variable '${DescriptionText}' not found.</msg>
+<msg time="2024-02-08T16:58:06.146807" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/locators/TokenGroupLocator.robot' on line 34: Setting variable '${DeleteLinkUpdatedToken}' failed: Variable '${UpdateDecriptionText}' not found. Did you mean:
+    ${UpdateDecriptionTextGrid}
+    ${NewUpdatedDecriptionText}
+    ${UpdateDecription}</msg>
+<msg time="2024-02-08T16:58:06.159925" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/locators/TokenGroupLocator.robot' on line 25: Setting variable '${EditDescriptionGrid}' failed: Variable '${DescriptionText}' not found.</msg>
+<msg time="2024-02-08T16:58:06.172318" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/locators/TokenGroupLocator.robot' on line 38: Setting variable '${GetValueFromEditDescriptionGrid}' failed: Variable '${DescriptionText}' not found.</msg>
+<msg time="2024-02-08T16:58:06.189947" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/locators/TokenGroupLocator.robot' on line 28: Setting variable '${IdentifyToken}' failed: Variable '${DescriptionText}' not found.</msg>
+<msg time="2024-02-08T16:58:06.205453" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/locators/TokenGroupLocator.robot' on line 33: Setting variable '${NewUpdatedDecriptionText}' failed: Variable '${UpdateDecriptionText}' not found. Did you mean:
+    ${UpdateDecriptionTextGrid}
+    ${NewUpdatedDecriptionText}
+    ${UpdateDecription}</msg>
+<msg time="2024-02-08T16:58:06.219818" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/locators/TokenGroupLocator.robot' on line 31: Setting variable '${SecoundUserUpdateDecription}' failed: Variable '${UpdateDecriptionText}' not found. Did you mean:
+    ${UpdateDecriptionTextGrid}
+    ${UpdateDecription}</msg>
+<msg time="2024-02-08T16:58:06.232824" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/locators/TokenGroupLocator.robot' on line 35: Setting variable '${UpdatedDeleteCheckBox}' failed: Variable '${UpdateDecriptionText}' not found. Did you mean:
+    ${UpdateDecriptionTextGrid}
+    ${UpdateDecription}</msg>
+<msg time="2024-02-08T16:58:06.250505" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/locators/TokenGroupLocator.robot' on line 32: Setting variable '${UpdatedDeleteLinkToken}' failed: Variable '${UpdateDecriptionText}' not found. Did you mean:
+    ${UpdateDecriptionTextGrid}
+    ${UpdateDecription}</msg>
+<msg time="2024-02-08T16:58:06.263643" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/locators/TokenGroupLocator.robot' on line 26: Setting variable '${UpdateDecriptionTextGrid}' failed: Variable '${UpdateDecriptionText}' not found. Did you mean:
+    ${UpdateDecriptionTextGrid}
+    ${UpdateDecription}</msg>
+<msg time="2024-02-08T16:58:06.275612" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/locators/TokenGroupLocator.robot' on line 29: Setting variable '${UpdateIdentifyToken}' failed: Variable '${DescriptionText}' not found.</msg>
+<msg time="2024-02-08T16:58:06.289367" level="ERROR">Error in file '/home/richatyagi/PycharmProjects/pythonProject/AndroidTest/locators/TokenGroupLocator.robot' on line 41: Setting variable '${VerifiedDeletedToken}' failed: Variable '${DescriptionText}' not found.</msg>
+<msg time="2024-02-08T16:58:17.276071" level="WARN">Keyword 'Web.Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.139)
+Stacktrace:
+#0 0x55fe40f35d93 &lt;unknown&gt;
+#1 0x55fe40c19337 &lt;unknown&gt;
+#2 0x55fe40befa18 &lt;unknown&gt;
+#3 0x55fe40c8fead &lt;unknown&gt;
+#4 0x55fe40ca5a95 &lt;unknown&gt;
+#5 0x55fe40c871e3 &lt;unknown&gt;
+#6 0x55fe40c57135 &lt;unknown&gt;
+#7 0x55fe40c5813e &lt;unknown&gt;
+#8 0x55fe40ef9e4b &lt;unknown&gt;
+#9 0x55fe40efddfa &lt;unknown&gt;
+#10 0x55fe40ee66d5 &lt;unknown&gt;
+#11 0x55fe40efea6f &lt;unknown&gt;
+#12 0x55fe40eca69f &lt;unknown&gt;
+#13 0x55fe40f23098 &lt;unknown&gt;
+#14 0x55fe40f23262 &lt;unknown&gt;
+#15 0x55fe40f34f34 &lt;unknown&gt;
+#16 0x7f2175ea3609 start_thread
+</msg>
+</errors>
+</robot>

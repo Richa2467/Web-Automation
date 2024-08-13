@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bf027f81-db38-4834-bc2e-bc480427d2bd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/DemoQa/example.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/flipkart.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/home/richatyagi/Documents/example.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/home/richatyagi/Documents/example.odt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/output.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-23.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-26.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-27.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-28.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-29.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-31.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-33.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-34.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-35.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-36.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-37.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-38.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-39.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-40.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-41.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-42.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-43.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-44.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-45.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-46.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-47.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-49.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-50.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-51.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-52.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-53.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-54.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-55.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-56.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-57.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-58.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-59.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-60.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-61.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-62.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-63.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-64.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-65.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-66.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-67.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-68.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-69.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-70.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-71.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DemoQa/selenium-screenshot-9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pythonProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AndroidTest/Test.robot" beforeDir="false" afterPath="$PROJECT_DIR$/AndroidTest/Test.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AndroidTest/appData/EriBank.apk" beforeDir="false" afterPath="$PROJECT_DIR$/AndroidTest/appData/EriBank.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AndroidTest/appData/QRCode.png" beforeDir="false" afterPath="$PROJECT_DIR$/AndroidTest/appData/QRCode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AndroidTest/resources/LongPress.py" beforeDir="false" afterPath="$PROJECT_DIR$/AndroidTest/resources/LongPress.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AndroidTest/testcases/appium-screenshot-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/AndroidTest/testcases/appium-screenshot-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AndroidTest/testcases/appium-screenshot-10.png" beforeDir="false" afterPath="$PROJECT_DIR$/AndroidTest/testcases/appium-screenshot-10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AndroidTest/testcases/appium-screenshot-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/AndroidTest/testcases/appium-screenshot-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AndroidTest/testcases/appium-screenshot-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/AndroidTest/testcases/appium-screenshot-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AndroidTest/testcases/appium-screenshot-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/AndroidTest/testcases/appium-screenshot-4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AndroidTest/testcases/appium-screenshot-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/AndroidTest/testcases/appium-screenshot-5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AndroidTest/testcases/appium-screenshot-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/AndroidTest/testcases/appium-screenshot-6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AndroidTest/testcases/appium-screenshot-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/AndroidTest/testcases/appium-screenshot-7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AndroidTest/testcases/appium-screenshot-8.png" beforeDir="false" afterPath="$PROJECT_DIR$/AndroidTest/testcases/appium-screenshot-8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AndroidTest/testcases/appium-screenshot-9.png" beforeDir="false" afterPath="$PROJECT_DIR$/AndroidTest/testcases/appium-screenshot-9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AndroidTest/testcases/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/AndroidTest/testcases/log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AndroidTest/testcases/logs/log-20240209-104022.html" beforeDir="false" afterPath="$PROJECT_DIR$/AndroidTest/testcases/logs/log-20240209-104022.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AndroidTest/testcases/logs/output-20240209-104022.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AndroidTest/testcases/logs/output-20240209-104022.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AndroidTest/testcases/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AndroidTest/testcases/output.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AndroidTest/testcases/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/AndroidTest/testcases/report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DemoQA/Test.robot" beforeDir="false" afterPath="$PROJECT_DIR$/DemoQa/Elements.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DemoQA/TextboxElement.robot" beforeDir="false" afterPath="$PROJECT_DIR$/DemoQa/geckodriver-1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DemoQA/appium-screenshot-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DemoQA/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/DemoQa/log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DemoQA/output.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DemoQA/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/DemoQa/report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DemoQA/selenium-screenshot-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DemoQA/selenium-screenshot-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DemoQA/selenium-screenshot-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DemoQA/selenium-screenshot-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DemoQA/selenium-screenshot-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice/Practice.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practice/Practice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Addtoken.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Addtoken.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/EmailOtp.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Project/EmailOtp.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/GoogleAuthLogin.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Project/GoogleAuthLogin.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Login.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Login.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project/output.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/report.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/PracticeAutomation" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2boDKqlDjUbsFXvAYo6Yq3m2SWI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.Amazon1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ApiTesting.executor&quot;: &quot;Run&quot;,
+    &quot;Python.First.executor&quot;: &quot;Run&quot;,
+    &quot;Python.LongPress.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Practice.executor&quot;: &quot;Run&quot;,
+    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/richatyagi/PycharmProjects/pythonProject/DemoQa&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;Robot&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/DemoQa" />
+      <recent name="$PROJECT_DIR$/AndroidTest/appData" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.Practice">
+    <configuration name="ApiTesting" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AndroidTest/lib" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AndroidTest/lib/ApiTesting.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="First" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Practice" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Practice/First.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="LongPress" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AndroidTest/resources" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AndroidTest/resources/LongPress.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Practice" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Practice" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Practice/Practice.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/app/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Practice" />
+        <item itemvalue="Python.LongPress" />
+        <item itemvalue="Python.__init__" />
+        <item itemvalue="Python.ApiTesting" />
+        <item itemvalue="Python.First" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-5b207ade9991-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.17890.14" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bf027f81-db38-4834-bc2e-bc480427d2bd" name="Changes" comment="" />
+      <created>1706872477340</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706872477340</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
